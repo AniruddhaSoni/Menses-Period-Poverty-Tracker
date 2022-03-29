@@ -1,4 +1,4 @@
-# MC: The Period Poverty Tracker
+# Period Poverty Tracker
 
 Period poverty is a global sanitation issue affecting boys and girls around the world explained by [Global Citizen](https://www.globalcitizen.org/en/content/period-poverty-everything-you-need-to-know/).
 According to UNICEF, 2.3 billion people worldwide lack basic sanitation services, and only 27 percent of individuals in poor countries have adequate handwashing facilities at home. People who have infected COVID-19 and are in a combat situation may have limited access to menstruation products and running water. Period poverty is a social and political issue, as well as an economic one. Period poverty denotes the challenge that many low-income women and girls endure when trying to afford period products. The word also refers to the increasing economic vulnerability that women and girls face as a result of the financial burden created by menstruation supplies. These include not only menstruation pads and tampons, but also associated costs such as pain medicine.
@@ -10,7 +10,7 @@ To address this issue, we developed "MC: The Period Poverty Tracker," a web-base
 
 In this app, there are two end users. One is a needy person who is experiencing period poverty, and the other is a donor who is willing to assist the needy by donating tampons, sanitary kits, soaps, and other items.
 
-* Go to [MC:The Period Poverty Tracker]() 
+* Go to [Period Poverty Tracker]() 
 * Login/Signup with your Google account 
 * Search needy/donor in map near your area 
 * Click on location symbol to receive information about them 
