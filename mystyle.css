@@ -1,206 +1,243 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 /*--------------------- Main Page CSS ---------------------*/
 
-  .hero {
-    width: 100%;
-    height: 100vh;
-    background: url(assets/main-bg.png) top center no-repeat;
-    background-size: cover;
-  }
-  .hero h1 {
-    margin: 0;
-    font-size: 80px;
-    font-weight: 700;
-    color: #0F81A5;
-  }
-  .hero h2 {
-    color: #ffffff;
-    margin: 15px 0 0 0;
-    font-size: 26px;
-  }
-  
-  .hero .hero-img {
-    text-align: right;
-  }
-  @media (min-width: 1024px) {
-    .hero {
-      background-attachment: fixed;
-    }
-  }
-  @media (max-width: 991px) {
-    .hero {
-      height: auto;
-      padding: 120px 0 60px 0;
-    }
-    .hero .hero-img {
-      text-align: center;
-      margin-top: 80px;
-    }
-    .hero .hero-img img {
-      width: 100%;
-    }
-  }
-  @media (max-width: 768px) {
-    .hero {
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 32px;
-    }
-    .hero h2 {
-      font-size: 24px;
-    }
-    .hero .hero-img img {
-      width: 100%;
-    }
-  }
-
-
-
-  /*--------------------- login Page CSS ---------------------*/
-  
-  .login {
-    align-items: center;
-  }
-
-  .login .login-img {
-    height: 400px;
-  }
-
-  .create {
-    align-items: center;
-  }
-
-  .create .create-heading p{
-    font-size: 44px;
-    font-weight: 600;
-    color: #0F81A5;
-  }
-
-  /*--------------------- Profile Page CSS ---------------------*/
-  .profile {
-    margin: 80px auto;
-    position: relative;
-    max-width: 800px;
-  }
-
-  .user-form .form-field {
-    position: relative;
-    margin: 32px 0;
-  }
-
-  .user-form .input-text {
-    display: block;
-    width: 100%;
-    height: 36px;
-    border-width: 0 0 2px 0;
-    background-color: #ffffff;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
-  }
-
-  .user-form .input-text:focus + .label, .user-form .input-text.not-empty + .label {
-    transform: translateY(-24px);
-  }
-
-  .user-form .input-text:focus {
-    outline: none;
-  }
-
-  .user-form .label {
-    position: absolute;
-    left: 20px;
-    bottom: 11px;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #000000;
-    cursor: text;
-    text-transform: capitalize;
-    transition: transform 0.2s ease-in-out;
-  }
-
-
-   /*--------------------- Help Page CSS ---------------------*/
-
-   #help-page .create-heading p{
-    font-size: 44px;
-    font-weight: 700;
-    color: #0F81A5;
-  }
-
-  #help h1 {
-    text-align: center;
-    margin: 70px 0 !important;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: capitalize;   
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(assets/ok.png) top center no-repeat;
+  background-size: cover;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 70px;
+  font-weight: 600;
+  color: #0f81a5;
+}
+.hero h2 {
+  color: #ffffff;
+  margin: 15px 0 0 0;
+  font-size: 18px;
 }
 
-#help .card, .card-header {
-    background-color: #0F81A5 !important;
-    border: none;
-    padding: 0 !important;
-    margin-bottom: 20px;
+.hero .hero-img {
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    padding: 120px 0 60px 0;
+  }
+  .hero .hero-img {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .hero .hero-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero h2 {
+    font-size: 24px;
+  }
+  .hero .hero-img img {
+    width: 100%;
+  }
+}
+
+/*--------------------- login Page CSS ---------------------*/
+
+.login {
+  align-items: center;
+}
+
+.login .login-img {
+  height: 400px;
+}
+
+.create {
+  align-items: center;
+}
+
+.create .create-heading p {
+  font-size: 44px;
+  font-weight: 600;
+  color: #0f81a5;
+}
+
+/*--------------------- Profile Page CSS ---------------------*/
+
+.fa-2x {
+  font-size: 1rem;
+}
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+  margin: 10px 5px 15px 20px;
+  color: #0f81a5;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 500;
+  color: #0f81a5;
+  margin: 10px 20px 15px 5px;
+}
+
+.nav-item {
+  margin: 30px auto;
+  font-size: 26px;
+  color: #0f81a5;
+}
+
+.profile {
+  margin: 20px auto;
+  position: relative;
+  max-width: 800px;
+}
+
+.user-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+
+.user-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.user-form .input-text:focus + .label,
+.user-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+
+.user-form .input-text:focus {
+  outline: none;
+}
+
+.user-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+}
+
+/*--------------------- Help Page CSS ---------------------*/
+
+#help-page .create-heading p {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0f81a5;
+}
+
+#help h1 {
+  text-align: center;
+  margin: 70px 0 !important;
+  text-transform: capitalize;
+}
+
+#help .card,
+.card-header {
+  background-color: #0f81a5 !important;
+  border: none;
+  padding: 0 !important;
+  margin-bottom: 20px;
 }
 
 #help .card {
-    box-shadow: 1 2px 25px 0 #0F81A5;
+  box-shadow: 1 2px 25px 0 #0f81a5;
 }
 
 #help .btn-link {
-    width: 100%;
-    height: 62px;
-    color: #ffffff;
-    font-weight: bold !important;
-    text-align: left !important;
-    text-decoration: none !important;
+  width: 100%;
+  height: 62px;
+  color: #ffffff;
+  font-weight: bold !important;
+  text-align: left !important;
+  text-decoration: none !important;
 }
 
- #help .btn-link:visited {
-    color: #ffffff;
-    text-decoration: none;
+#help .btn-link:visited {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #help .btn-link:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #help .card-body {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 #help .btn-link::after {
-    content: '\2212';
-    width: 35px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 50px;
-    right: 15px;
-    top: 18px;
-    color: #0F81A5;
-    position: absolute;
-    background: #ffffff;
+  content: "\2212";
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50px;
+  right: 15px;
+  top: 18px;
+  color: #0f81a5;
+  position: absolute;
+  background: #ffffff;
 }
 
 #help .btn-link.collapsed::after {
-    content: '\002B';
+  content: "\002B";
 }
 
 #help .btn-link::before {
-    content: '';
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    background: #0F81A5;
-    z-index: 1;
-    transform: rotate(45deg);
-    left: 30px;
-    top: 70px;
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background: #0f81a5;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 30px;
+  top: 70px;
+}
+
+/*--------------------- Contact Page CSS ---------------------*/
+
+#contactus p {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0f81a5;
+  text-transform: uppercase;
+}
+
+
+/*--------------------- Contact Page CSS ---------------------*/
+
+#map {
+  height: 100vh;
 }
