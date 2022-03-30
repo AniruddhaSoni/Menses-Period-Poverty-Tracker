@@ -1,96 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MC | The Period Poverty Tracker</title>
 
-
     <!--Bootstrap Custom CSS-->
-    <link rel="stylesheet" href="./dist/css/main.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/css/main.css" crossorigin="anonymous" />
 
     <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
 
     <!--icon-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
 
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
     <!--Profile Page-->
 
     <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                  <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                      <h5 class="text-white h4">Collapsed content</h5>
-                      <span class="text-muted">Toggleable via the navbar brand.</span>
-                    </div>
-                  </div>
-                  <nav class="navbar navbar-dark bg-dark">
-                    <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    </div>
-                  </nav>
-                </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+              </div>
             </div>
-        </div>
-    </section>
-
-     <!--Profile Page form-->
-     
-  <section id="user-profile" class="profile d-flex justify-content-center">
-    <div class="container">
-      <div class="row user-form">
-        <div class="form-field col-sm-12">
-          <input type="text" class="input-text" name="name" id="name">
-          <label for="name" class="label">Name</label>
-          </div>
-          <div class="form-field col-sm-12">
-          <input type="email" class="input-text" name="email" id="email">
-          <label for="email" class="label">Email</label>
-          </div>
-          <div class="form-field col-sm-12">
-          <input type="text" class="input-text" name="bio" id="bio">
-          <label for="bio" class="label">Add Bio</label>
-          </div>
-          <div class="form-field col-sm-12">
-          <input type="text" class="input-text" name="address" id="address">
-          <label for="address" class="label">Address</label>
-          </div>
-          <div class="form-field col-sm-12">
-          <input type="text" class="input-text" name="location" id="location">
-          <label for="location" class="label">Change location</label>
-          </div>
-          <div class="form-field col-sm-12 d-flex justify-content-end flex-column align-items-end">
-            <button type="submit" class="btn btn-outline-teal">
-              Save
-            </button>
+            <nav class="navbar">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarToggleExternalContent"
+                  aria-controls="navbarToggleExternalContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon "><i class="bi bi-list fa-lg"></i></span>
+                </button>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!--Profile Page form-->
+
+    <section id="user-profile" class="profile d-flex justify-content-center">
+      <div class="container">
+        <div class="row user-form">
+          <div class="form-field col-sm-12">
+            <input type="text" class="input-text" name="name" id="name" />
+            <label for="name" class="label">Name</label>
+          </div>
+          <div class="form-field col-sm-12">
+            <input type="email" class="input-text" name="email" id="email" />
+            <label for="email" class="label">Email</label>
+          </div>
+          <div class="form-field col-sm-12">
+            <input type="text" class="input-text" name="bio" id="bio" />
+            <label for="bio" class="label">Add Bio</label>
+          </div>
+          <div class="form-field col-sm-12">
+            <input type="text" class="input-text" name="address" id="address" />
+            <label for="address" class="label">Address</label>
+          </div>
+          <div class="form-field col-sm-12">
+            <input
+              type="text"
+              class="input-text"
+              name="location"
+              id="location"
+            />
+            <label for="location" class="label">Change location</label>
+          </div>
+          <div
+            class="form-field col-sm-12 d-flex justify-content-end flex-column align-items-end"
+          >
+            <button type="submit" class="btn btn-outline-teal">Save</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--Bootstrap JQuery and Javascript-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./assets/js/script.js"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
