@@ -94,8 +94,6 @@
   .navbar-toggler.toggler-example {
     cursor: pointer;
     margin: 10px 5px 15px 20px;
-  }
-  .dark-blue-text {
     color: #0F81A5;
   }
 
@@ -109,6 +107,7 @@
  .nav-item {
    margin: 50px auto;
    font-size: 26px;
+   color: #0F81A5;
  }
 
 
