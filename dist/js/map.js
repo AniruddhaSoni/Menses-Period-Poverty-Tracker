@@ -1,13 +1,19 @@
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-    mapId: "42615760941f5f34",
+navigator.geolocation.getCurrentPosition(function (position) {
+  var lat = position.coords.latitude;
+  var lng = position.coords.longitude;
+  var map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+      lat: lat,
+      lng: lng,
+    },
+    zoom: 15,
   });
-
-  new google.maps.Marker({
-    position: { lat: -25.363, lng: 131.044 },
-    map,
+  var marker = new google.maps.Marker({
+    position: {
+      lat: lat,
+      lng: lng,
+    },
+    map: map,
     title: "Hello World!",
   });
-}
+});
