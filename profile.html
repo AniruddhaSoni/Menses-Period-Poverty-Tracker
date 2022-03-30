@@ -35,42 +35,6 @@
   </head>
 
   <body>
-    <!--Profile Page-->
-
-    <!--
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-dark p-4">
-                <h5 class="text-black h4">Collapsed content</h5>
-                <h5 class="text-white h4">Collapsed content</h5>
-                <h5 class="text-white h4">Collapsed content</h5>
-              </div>
-            </div>
-            <nav class="navbar">
-              <div class="container-fluid">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarToggleExternalContent"
-                  aria-controls="navbarToggleExternalContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon "><i class="bi bi-list fa-lg"></i></span>
-                </button>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    -->
-
     <section>
       <!--Navbar-->
       <nav class="navbar">
@@ -86,6 +50,14 @@
         >
           <span class="dark-blue-text"><i class="fas fa-bars fa-2x"></i></span>
         </button>
+        <!-- Navbar brand -->
+        <a
+          class="navbar-brand disabled"
+          href="#"
+          tabindex="-1"
+          aria-disabled="true"
+          >Profile</a
+        >
 
         <!-- Collapsible content -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
@@ -110,15 +82,6 @@
         </div>
 
         <!-- Collapsible content -->
-
-        <!-- Navbar brand -->
-        <a
-          class="navbar-brand disabled"
-          href="#"
-          tabindex="-1"
-          aria-disabled="true"
-          >Profile</a
-        >
       </nav>
       <!--/.Navbar-->
     </section>
@@ -130,19 +93,19 @@
         <div class="row user-form">
           <div class="form-field col-sm-12">
             <input type="text" class="input-text" name="name" id="name" />
-            <label for="name" class="label">Name</label>
+            <label for="name">Name</label>
           </div>
           <div class="form-field col-sm-12">
             <input type="email" class="input-text" name="email" id="email" />
-            <label for="email" class="label">Email</label>
+            <label for="email">Email</label>
           </div>
           <div class="form-field col-sm-12">
             <input type="text" class="input-text" name="bio" id="bio" />
-            <label for="bio" class="label">Add Bio</label>
+            <label for="bio">Add Bio</label>
           </div>
           <div class="form-field col-sm-12">
             <input type="text" class="input-text" name="address" id="address" />
-            <label for="address" class="label">Address</label>
+            <label for="address">Address</label>
           </div>
           <div class="form-field col-sm-12">
             <input
@@ -151,12 +114,12 @@
               name="location"
               id="location"
             />
-            <label for="location" class="label">Change location</label>
+            <label for="location">Change location</label>
           </div>
           <div
             class="form-field col-sm-12 d-flex justify-content-end flex-column align-items-end"
           >
-            <button type="submit" class="btn btn-outline-teal">Save</button>
+            <button id="update" class="btn btn-outline-teal">Save</button>
           </div>
         </div>
       </div>
@@ -178,22 +141,9 @@
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./assets/js/script.js"></script>
+
+    <script src="./dist/js/auth.js"></script>
+
+    <script type="module" src="./dist/js/profile.js"></script>
   </body>
 </html>

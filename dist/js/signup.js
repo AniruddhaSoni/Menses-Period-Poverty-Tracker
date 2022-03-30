@@ -5,10 +5,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 import {
   getFirestore,
-  collection,
-  getDocs,
-  addDoc,
-  deleteDoc,
   doc,
   setDoc,
 } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
@@ -26,32 +22,70 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
+// ------------------------------//
+
+var userSchema = (name, phone, email, location, role) => ({
+  name: name,
+  role: role,
+  contact: {
+    phone: phone,
+    email: email,
+    location: location,
+  },
+});
+var ngoSchema = (name, phone, email, location, role, longitude, latitude) => ({
+  name: name,
+  role: role,
+  contact: {
+    phone: phone,
+    email: email,
+    location: location,
+  },
+  coordinates: {
+    longitude: longitude,
+    latitude: latitude,
+  },
+});
+
+navigator.geolocation.getCurrentPosition(
+  (position) => {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    console.log(latitude, longitude);
+  },
+  () => {
+    alert("Please enable location services");
+  }
+);
 
 function signup() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-  const name = document.getElementById("name").value;
 
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const email = document.getElementById("email").value;
+      const location = document.getElementById("location").value;
+      const role = document.getElementById("role").value;
+
       const user = userCredential.user;
       sessionStorage.setItem("userID", user.uid);
       console.log(user.uid);
 
-      const docRef = doc(db, "users", user.id);
-
-      //adding data to firestore
-      setDoc(docRef, {
-        name: name,
-        email: email,
-        password: password,
-        id: user.uid,
-      });
-
-      // location.replace("profile.html");
+      setDoc(
+        doc(db, "users", user.uid),
+        role == "ngo"
+          ? ngoSchema(name, phone, email, location, role, longitude, latitude)
+          : userSchema(name, phone, email, location, role)
+      );
+    })
+    .then(() => {
+      location.replace("map.html");
     })
     .catch((error) => {
-      const errorCode = error.code;
       console.log(error);
     });
 }
