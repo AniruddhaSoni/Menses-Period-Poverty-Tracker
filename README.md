@@ -48,3 +48,4 @@ Donations can help reduce period poverty, but there are other things we can do, 
 * Including a blog part where people may share their stories and inspire others, as well as provide health advice in their articles.
 * In addition, we intend to add a flip card that provides the user with random health tips.
 * We want to show youngsters a process by visualising things and educate them about periods in a fun way to make them aware. So we'd like to leverage webVR technology to construct a VR environment and teach them about the menstruation cycle.
+* We intend to include global chat in this application so that users may quickly get answers to their questions and engage with others, globally.
