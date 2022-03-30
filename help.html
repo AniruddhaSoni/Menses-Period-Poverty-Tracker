@@ -1,201 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MC | The Period Poverty Tracker</title>
 
-
     <!--Bootstrap Custom CSS-->
-    <link rel="stylesheet" href="./dist/css/main.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/css/main.css" crossorigin="anonymous" />
 
     <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
 
     <!--icon-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
 
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Help Page-->
 
-<!--Help Page-->
+    <section>
+      <!--Navbar-->
+      <nav class="navbar">
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler toggler-example"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="dark-blue-text"><i class="fas fa-bars fa-2x"></i></span>
+        </button>
 
-<section>
-  <!--Navbar-->
-  <nav class="navbar">
-    <!-- Collapse button -->
-    <button
-      class="navbar-toggler toggler-example"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent1"
-      aria-controls="navbarSupportedContent1"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="dark-blue-text"><i class="fas fa-bars fa-2x"></i></span>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="profile.html"
-            >Profile <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="map.html">Map</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="help.html">Help</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contactus.html">Contact Us</a>
-        </li>
-      </ul>
-      <!-- Links -->
-    </div>
-
-    <!-- Collapsible content -->
-
-    <!-- Navbar brand -->
-    <a
-      class="navbar-brand disabled"
-      href="#"
-      tabindex="-1"
-      aria-disabled="true"
-      >Help</a
-    >
-  </nav>
-  <!--/.Navbar-->
-</section>
-
-    <section id="help" class="login d-flex justify-content-center">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div id="accordion">
-                        <div class="card">
-                          <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                How this application works?
-                              </button>
-                            </h5>
-                          </div>
-                      
-                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, iusto dolor animi minima debitis hic eligendi similique iste nihil, suscipit, distinctio ipsam ducimus. Modi vel porro voluptatem animi cum beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic, excepturi blanditiis et iure nemo adipisci tenetur labore architecto eveniet quisquam, laboriosam saepe quibusdam veritatis! Porro animi dolorum aliquam autem?
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                What is the need of creating this application?
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptate, veritatis vitae distinctio dolor dicta iure tempore cumque iusto possimus delectus, veniam laborum quisquam. Repellat assumenda vero a enim culpa?
-                                Deleniti tempore id magnam odit corrupti, inventore provident nisi repellendus quis, voluptate nulla deserunt labore iusto dignissimos modi fuga nobis cum a voluptates qui asperiores! Quod cupiditate est sequi illum!
-                                Nobis adipisci iure quidem in doloribus quas. Odio explicabo rem repudiandae perferendis magnam. Debitis beatae ab ea rem aperiam optio odit quae animi quidem et? Dolores dolorum eaque similique atque!
-                                Ad ipsa doloremque non ullam, cumque laborum odio distinctio suscipit, beatae et blanditiis optio animi doloribus asperiores, voluptatem est alias? Ea veniam, molestias delectus nihil velit officia impedit quidem eaque.
-                                Possimus distinctio voluptatum perferendis ducimus nostrum itaque nisi, consectetur fuga, assumenda sed adipisci rerum delectus quo quaerat odio animi commodi mollitia atque. Laborum, at. Deleniti adipisci beatae iusto debitis cumque.
-                                Harum eius unde vero veniam, molestiae, voluptatem sequi aut nihil quos maxime vitae animi exercitationem possimus iste temporibus in rem eum amet soluta natus omnis sit. Maxime odit tempore deleniti!
-                                Sit, recusandae voluptate nobis nisi et asperiores id quisquam, deleniti distinctio accusantium neque. Velit optio incidunt ducimus sint voluptatibus facilis ullam nihil eius, saepe quis iusto aliquam, est quidem voluptate.
-                                Cumque sed nemo praesentium, eius blanditiis provident ab consequatur.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                What is Period Poverty?
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptate, veritatis vitae distinctio dolor dicta iure tempore cumque iusto possimus delectus, veniam laborum quisquam. Repellat assumenda vero a enim culpa?
-                                Deleniti tempore id magnam odit corrupti, inventore provident nisi repellendus quis, voluptate nulla deserunt labore iusto dignissimos modi fuga nobis cum a voluptates qui asperiores! Quod cupiditate est sequi illum!
-                                Nobis adipisci iure quidem in doloribus quas. Odio explicabo rem repudiandae perferendis magnam. Debitis beatae ab ea rem aperiam optio odit quae animi quidem et? Dolores dolorum eaque similique atque!
-                                Ad ipsa doloremque non ullam, cumque laborum odio distinctio suscipit, beatae et blanditiis optio animi doloribus asperiores, voluptatem est alias? Ea veniam, molestias delectus nihil velit officia impedit quidem eaque.
-                                Possimus distinctio voluptatum perferendis ducimus nostrum itaque nisi, consectetur fuga, assumenda sed adipisci rerum delectus quo quaerat odio animi commodi mollitia atque. Laborum, at. Deleniti adipisci beatae iusto debitis cumque.
-                                Harum eius unde vero veniam, molestiae, voluptatem sequi aut nihil quos maxime vitae animi exercitationem possimus iste temporibus in rem eum amet soluta natus omnis sit. Maxime odit tempore deleniti!
-                                Sit, recusandae voluptate nobis nisi et asperiores id quisquam, deleniti distinctio accusantium neque. Velit optio incidunt ducimus sint voluptatibus facilis ullam nihil eius, saepe quis iusto aliquam, est quidem voluptate.
-                                Cumque sed nemo praesentium, eius blanditiis provident ab consequatur.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    How Can I Donate Sanitery Pads?
-                                </button>
-                              </h5>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                              <div class="card-body">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptate, veritatis vitae distinctio dolor dicta iure tempore cumque iusto possimus delectus, veniam laborum quisquam. Repellat assumenda vero a enim culpa?
-                                Deleniti tempore id magnam odit corrupti, inventore provident nisi repellendus quis, voluptate nulla deserunt labore iusto dignissimos modi fuga nobis cum a voluptates qui asperiores! Quod cupiditate est sequi illum!
-                                Nobis adipisci iure quidem in doloribus quas. Odio explicabo rem repudiandae perferendis magnam. Debitis beatae ab ea rem aperiam optio odit quae animi quidem et? Dolores dolorum eaque similique atque!
-                                Ad ipsa doloremque non ullam, cumque laborum odio distinctio suscipit, beatae et blanditiis optio animi doloribus asperiores, voluptatem est alias? Ea veniam, molestias delectus nihil velit officia impedit quidem eaque.
-                                Possimus distinctio voluptatum perferendis ducimus nostrum itaque nisi, consectetur fuga, assumenda sed adipisci rerum delectus quo quaerat odio animi commodi mollitia atque. Laborum, at. Deleniti adipisci beatae iusto debitis cumque.
-                                Harum eius unde vero veniam, molestiae, voluptatem sequi aut nihil quos maxime vitae animi exercitationem possimus iste temporibus in rem eum amet soluta natus omnis sit. Maxime odit tempore deleniti!
-                                Sit, recusandae voluptate nobis nisi et asperiores id quisquam, deleniti distinctio accusantium neque. Velit optio incidunt ducimus sint voluptatibus facilis ullam nihil eius, saepe quis iusto aliquam, est quidem voluptate.
-                                Cumque sed nemo praesentium, eius blanditiis provident ab consequatur.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header" id="headingFive">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Is this free?
-                                </button>
-                              </h5>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                              <div class="card-body">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptate, veritatis vitae distinctio dolor dicta iure tempore cumque iusto possimus delectus, veniam laborum quisquam. Repellat assumenda vero a enim culpa?
-                                Deleniti tempore id magnam odit corrupti, inventore provident nisi repellendus quis, voluptate nulla deserunt labore iusto dignissimos modi fuga nobis cum a voluptates qui asperiores! Quod cupiditate est sequi illum!
-                                Nobis adipisci iure quidem in doloribus quas. Odio explicabo rem repudiandae perferendis magnam. Debitis beatae ab ea rem aperiam optio odit quae animi quidem et? Dolores dolorum eaque similique atque!
-                                Ad ipsa doloremque non ullam, cumque laborum odio distinctio suscipit, beatae et blanditiis optio animi doloribus asperiores, voluptatem est alias? Ea veniam, molestias delectus nihil velit officia impedit quidem eaque.
-                                Possimus distinctio voluptatum perferendis ducimus nostrum itaque nisi, consectetur fuga, assumenda sed adipisci rerum delectus quo quaerat odio animi commodi mollitia atque. Laborum, at. Deleniti adipisci beatae iusto debitis cumque.
-                                Harum eius unde vero veniam, molestiae, voluptatem sequi aut nihil quos maxime vitae animi exercitationem possimus iste temporibus in rem eum amet soluta natus omnis sit. Maxime odit tempore deleniti!
-                                Sit, recusandae voluptate nobis nisi et asperiores id quisquam, deleniti distinctio accusantium neque. Velit optio incidunt ducimus sint voluptatibus facilis ullam nihil eius, saepe quis iusto aliquam, est quidem voluptate.
-                                Cumque sed nemo praesentium, eius blanditiis provident ab consequatur.
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                </div>
-            </div>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="profile.html"
+                >Profile <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help.html">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+          <!-- Links -->
         </div>
-    
+
+        <!-- Collapsible content -->
+
+        <!-- Navbar brand -->
+        <a
+          class="navbar-brand disabled"
+          href="#"
+          tabindex="-1"
+          aria-disabled="true"
+          >Help</a
+        >
+      </nav>
+      <!--/.Navbar-->
     </section>
 
+    <section id="help" class="login d-flex justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      What  is period poverty?
+                    </button>
+                  </h5>
+                </div>
 
-     <!--Bootstrap JQuery and Javascript-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./assets/js/script.js"></script>
-</body>
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Period poverty is a worldwide problem. It describes a lack
+                    of access to menstrual products, sanitation, and relevant
+                    information.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      How should this application be used?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    This application has two end users. One is a needy person
+                    who is going through menstruation, and the other is a donor
+                    (such as a government organization, a non-profit
+                    organization, etc.) who is willing to help the needy by
+                    donating tampons, sanitary pads (soaps), and other necessary
+                    items.
+                    <p>Here are some steps to take.</p>
+                    <li>
+                      When you access the Period Poverty Tracker website, you
+                      will see a landing page/welcome page.
+                    </li>
+                    <li>
+                      By clicking on the welcome button, you will be able to
+                      login.
+                    </li>
+                    <li>
+                      You should now be able to see the login / register page.
+                    </li>
+                    <li>Login/Signup</li>
+                    <li>
+                      You are then taken to a map page where you can look for
+                      donors (NGO&#39;s, for example) and the needy. The blue
+                      location icon represents a donor, whereas the red one
+                      represents a needy person&#39;s location.
+                    </li>
+                    <li>
+                      You may also locate the hanburgur icon on the left bottom
+                      side, which links to the profile page, map page, help
+                      page, and contact us page.
+                    </li>
+                    <li>
+                      If a user wants to modify his or her information, they can
+                      do so quickly on the profile page.
+                    </li>
+                    <li>
+                      If you want to read some frequently asked questions
+                      regarding the application, you can visit the help page.
+                    </li>
+                    <li>
+                      If you have any questions or comments about the
+                      application, please contact us via the contact page.
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      How do I make a sanitary kit donation?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    On the map page, you can look for people in need (who you
+                    can help) near you. The red location icon on the map assists
+                    you in locating a needy person. Then you can click on the
+                    location icon, which will bring up a slide with all of the
+                    user&#39;s information, including their contact information.
+                    You may easily contact them and assist them there. It would
+                    be really appreciated if you could assist someone.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      How can I get in touch with the organization/donor who is
+                      donating sanitary kits?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseFour"
+                  class="collapse"
+                  aria-labelledby="headingFour"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Donor can be found on the map section. Navigate to the map
+                    and look for the donor, who is represented by the Tiffany
+                    blue colour location icon. Click on that icon to get all of
+                    the necessary information about the donor, including contact
+                    information.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      How to help ending period poverty?
+                    </button>
+                  </h5>
+                </div>
+                <div
+                  id="collapseFive"
+                  class="collapse"
+                  aria-labelledby="headingFive"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Ending period poverty or period shame cannot begin and
+                    finish with simply giving period supplies such as pads and
+                    tampons; rather, it must begin with education and addressing
+                    discriminatory attitudes and beliefs.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Bootstrap JQuery and Javascript-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
