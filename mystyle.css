@@ -102,6 +102,8 @@
    .navbar-brand {
     font-size: 36px;
     font-weight: 500;
+    color: #0F81A5;
+    margin: 10px 20px 15px 5px;
   }
 
  .nav-item {
