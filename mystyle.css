@@ -86,8 +86,32 @@
   }
 
   /*--------------------- Profile Page CSS ---------------------*/
+
+  /*--------------------- Hamburger Icon in Profile Page CSS ---------------------*/
+  .fa-1x {
+    font-size: 2rem;
+  }
+  .navbar-toggler.toggler-example {
+    cursor: pointer;
+    margin: 10px 5px 15px 20px;
+  }
+  .dark-blue-text {
+    color: #0F81A5;
+  }
+
+   .navbar-brand {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+ .nav-item {
+   margin: 50px auto;
+   font-size: 26px;
+ }
+
+
   .profile {
-    margin: 80px auto;
+    margin: 60px auto;
     position: relative;
     max-width: 800px;
   }
