@@ -234,3 +234,10 @@
   color: #0f81a5;
   text-transform: uppercase;
 }
+
+
+/*--------------------- Contact Page CSS ---------------------*/
+
+#map {
+  height: 100vh;
+}
