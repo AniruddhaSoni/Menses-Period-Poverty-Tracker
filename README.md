@@ -32,17 +32,16 @@ So to reduce the period poverty, we have created this application which will pro
 ## Technology used
 
 * Backend - Javascript
-* Frontend - HTML/CSS + bootstrap 5
+* Frontend - HTML/CSS, Bootstrap 5, SCSS
 * Tools used - VS code, Git/Github, Figma, MongoDB
-* Database - firebase
-* Google Technology - Google map API, firebase
+* Database - Firebase
+* Google Technology - Google map API, Firebase
 
 ## Future Scope
 
 Donations can help reduce period poverty, but there are other things we can do, such as spreading awareness, counselling women to teach them about the menstruation cycle, what to do and what not to do during their periods, and so on.
 
-* We intend to include global chat in this application so that users may quickly get answers to their questions and engage with others, globally.
-* Also, we want to include a Google Meet function in this programme so that if an NGO organises an event to raise awareness, it can reach a larger and larger audience. 
+* We intend to include a Google Meet function in this application so that if an NGO organises an event to raise awareness, it can reach a larger and larger audience. 
 * We also wish to provide spaces (basically a chat box for all members of that group) to different organizations so that anyone can join any space that meets his or her needs and engage with other people and specialists while discussing their issues.
 * Including a blog part where people may share their stories and inspire others, as well as provide health advice in their articles.
 * In addition, we intend to add a flip card that provides the user with random health tips.
