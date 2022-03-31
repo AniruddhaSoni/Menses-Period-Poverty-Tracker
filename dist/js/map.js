@@ -11,7 +11,7 @@ navigator.geolocation.getCurrentPosition(function (position) {
       lat: lat,
       lng: lng,
     },
-    zoom: 4,
+    zoom: 7,
   });
   var mylocation = new google.maps.Marker({
     position: {
@@ -31,6 +31,7 @@ navigator.geolocation.getCurrentPosition(function (position) {
         lat: lat,
         lng: lon,
       },
+      title: latLon[i].name,
       map: map,
     });
   }
