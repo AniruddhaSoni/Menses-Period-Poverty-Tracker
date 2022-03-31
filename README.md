@@ -33,10 +33,10 @@ So to reduce the period poverty, we have created this application which will pro
 
 ## Technology used
 
-* Backend - Javascript
+* Backend - Firebase
 * Frontend - HTML/CSS, Bootstrap 5, SCSS
 * Tools used - VS code, Git/Github, Figma, Firestore Database
-* Database - Firebase
+* Database - Firestore
 * Google Technology - Google map API, Firebase
 
 ## Future Scope
