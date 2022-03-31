@@ -46,13 +46,13 @@ var ngoSchema = (name, phone, email, location, role, longitude, latitude) => ({
     latitude: latitude,
   },
 });
+var latitude;
+var longitude;
 
 navigator.geolocation.getCurrentPosition(
   (position) => {
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-
-    console.log(latitude, longitude);
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
   },
   () => {
     alert("Please enable location services");
@@ -73,11 +73,13 @@ function signup() {
 
       const user = userCredential.user;
       sessionStorage.setItem("userID", user.uid);
-      console.log(user.uid);
+      console.log(
+        ngoSchema(name, phone, email, location, role, longitude, latitude)
+      );
 
       setDoc(
         doc(db, "users", user.uid),
-        role == "ngo"
+        role == "donor"
           ? ngoSchema(name, phone, email, location, role, longitude, latitude)
           : userSchema(name, phone, email, location, role)
       );
