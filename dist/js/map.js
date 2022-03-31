@@ -32,6 +32,7 @@ navigator.geolocation.getCurrentPosition(function (position) {
         lng: lon,
       },
       title: latLon[i].name,
+      label:latLon[i].name,
       map: map,
     });
   }
