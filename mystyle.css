@@ -5,6 +5,10 @@
 
 /*--------------------- Main Page CSS ---------------------*/
 
+#hero {
+  height: 100vh;
+}
+
 .hero {
   width: 100%;
   height: 100vh;
@@ -42,6 +46,7 @@
   }
   .hero .hero-img img {
     width: 100%;
+    height: 100vh!important;
   }
 }
 @media (max-width: 768px) {
@@ -56,6 +61,7 @@
   }
   .hero .hero-img img {
     width: 100%;
+    height: 100vh!important;
   }
 }
 
