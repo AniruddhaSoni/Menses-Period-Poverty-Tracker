@@ -23,6 +23,7 @@ navigator.geolocation.getCurrentPosition(function (position) {
     title: "Your Location",
   });
 
+  var markers = new Array();
   for (var i = 0; i < latLon.length; i++) {
     var lat = latLon[i].lat;
     var lon = latLon[i].lon;
@@ -31,8 +32,40 @@ navigator.geolocation.getCurrentPosition(function (position) {
         lat: lat,
         lng: lon,
       },
-      title: latLon[i].name,
       map: map,
     });
+    markers.push(marker);
   }
+  markers.forEach((i, index) => {
+    var contentString =
+      '<div id="content">' +
+      '<div id="siteNotice">' +
+      "</div>" +
+      '<h1 id="firstHeading" class="firstHeading">' +
+      latLon[index].name +
+      "</h1 > " +
+      '<div id="bodyContent">' +
+      "<div>" +
+      "<h3> Address </h3>" +
+      "<p>" +
+      latLon[index].address +
+      "</p>" +
+      "<h3> Phone </h3>" +
+      "<p>" +
+      latLon[index].address +
+      "</p>" +
+      "</div>";
+    "</div>" + "</div>";
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
+
+    i.addListener("click", () => {
+      infowindow.open({
+        anchor: i,
+        map,
+        shouldFocus: false,
+      });
+    });
+  });
 });
