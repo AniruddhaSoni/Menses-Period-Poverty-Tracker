@@ -241,3 +241,13 @@
 #map {
   height: 100vh;
 }
+
+/*--------------------- Dashboard Page CSS ---------------------*/
+#dashboardCard .card-body {
+  background-color: #f1f1f3;
+  padding: 40px;
+}
+
+#dashboardCard .dashCards {
+  margin-bottom: 16px;
+}
