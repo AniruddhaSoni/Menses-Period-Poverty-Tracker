@@ -52,7 +52,7 @@ navigator.geolocation.getCurrentPosition(function (position) {
       "</p>" +
       "<h3> Phone </h3>" +
       "<p>" +
-      latLon[index].address +
+      latLon[index].phone +
       "</p>" +
       "</div>";
     "</div>" + "</div>";
