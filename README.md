@@ -12,7 +12,7 @@ To address this issue, we developed "Period Poverty Tracker", a web-based applic
 
 In this app, there are two end users. One is a needy person who is experiencing period poverty, and the other is a donor who is willing to assist the needy by donating tampons, sanitary kits, soaps, and other items.
 
-* Go to [Period Poverty Tracker]() 
+* Go to [Period Poverty Tracker](https://aniruddhasoni.github.io/Gsolution/) 
 * Login/Signup with your Google account 
 * Search needy/donor in map near your area 
 * Click on location symbol to receive information about them 
