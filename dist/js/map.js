@@ -14,7 +14,6 @@ navigator.geolocation.getCurrentPosition(function (position) {
       lng: lng,
     },
     map: map,
-    icon: "https://img.icons8.com/color/48/000000/marker.png",
-    title: "Hello World!",
+    icon: "https://img.icons8.com/color/28/location-off.png",
   });
 });

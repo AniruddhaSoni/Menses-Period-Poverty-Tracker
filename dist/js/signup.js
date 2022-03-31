@@ -77,7 +77,7 @@ function signup() {
 
       setDoc(
         doc(db, "users", user.uid),
-        role == "ngo"
+        role == "donor"
           ? ngoSchema(name, phone, email, location, role, longitude, latitude)
           : userSchema(name, phone, email, location, role)
       );
