@@ -106,7 +106,7 @@
 }
 
 .nav-item {
-  margin: 30px auto;
+  margin: 40px auto;
   font-size: 30px;
   color: #0f81a5;
 }
@@ -174,7 +174,7 @@
   background-color: #0f81a5 !important;
   border: none;
   padding: 0 !important;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #help .card {
@@ -241,7 +241,7 @@
   text-transform: uppercase;
 }
 
-/*--------------------- Contact Page CSS ---------------------*/
+/*--------------------- Map Page CSS ---------------------*/
 
 #map {
   height: 100vh;
@@ -250,11 +250,12 @@
 /*--------------------- Dashboard Page CSS ---------------------*/
 #dashboardCard .card-body {
   background-color: #f1f1f3;
-  padding: 40px;
+  padding: 50px;
 }
 
 #dashboardCard .dashCards {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .allNgos {
   position: absolute;
