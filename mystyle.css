@@ -9,9 +9,11 @@
 
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 100vh !important;
   background: url(assets/ok.png) top center no-repeat;
   background-size: cover;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .hero h1 {
   margin: 0;
@@ -60,7 +62,6 @@
     width: 100%;
   }
 }
-
 
 /*--------------------- login Page CSS ---------------------*/
 
@@ -236,7 +237,6 @@
   text-transform: uppercase;
 }
 
-
 /*--------------------- Contact Page CSS ---------------------*/
 
 #map {
@@ -251,4 +251,12 @@
 
 #dashboardCard .dashCards {
   margin-bottom: 16px;
+}
+.allNgos {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(100%, 400px);
+  height: 100%;
+  background-color: white;
 }

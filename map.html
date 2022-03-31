@@ -9,9 +9,6 @@
     <!--Bootstrap Custom CSS-->
     <link rel="stylesheet" href="./dist/css/main.css" crossorigin="anonymous" />
 
-    <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="mystyle.css" />
-
     <!--icon-->
     <link
       rel="stylesheet"
@@ -27,6 +24,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
   </head>
   <body>
     <section>
@@ -84,8 +83,10 @@
       <!--/.Navbar-->
     </section>
     <!--Map Page-->
-
-    <div id="map"></div>
+    <section class="position-relative">
+      <div id="map"></div>
+      <!-- <div class="allNgos"></div> -->
+    </section>
 
     <!--Custom javascript-->
 
@@ -109,12 +110,10 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <!-- <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFsACcc2Q3tRcSITVL8P-ecG524ABOXJE&callback=initMap&v=weekly"
-      async
-    ></script> -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFsACcc2Q3tRcSITVL8P-ecG524ABOXJE&libraries=places"></script>
-    <script src="./dist/js/map.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFsACcc2Q3tRcSITVL8P-ecG524ABOXJE&libraries=places"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFsACcc2Q3tRcSITVL8P-ecG524ABOXJE&libraries=&v=weekly"></script>
+
+    <script type="module" src="./dist/js/map.js"></script>
     <script src="./dist/js/auth.js"></script>
   </body>
 </html>
