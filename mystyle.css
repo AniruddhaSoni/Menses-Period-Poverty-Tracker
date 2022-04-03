@@ -6,6 +6,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.btn-blue,
+.bg-blue {
+  background-color: #0f81a5;
+  color: #fff;
+}
+.bg-lightblue {
+  background-color: #dff0f2;
+}
+
 /*--------------------- Index Page CSS ---------------------*/
 
 #banner {
@@ -463,4 +472,28 @@
 }
 .services .icon-box:hover .icon {
   border-color: #0f81a5;
+}
+/* -----------space----------------- */
+
+.chatBox {
+  position: relative;
+  height: 80vh;
+}
+.chatBox .inputField {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+}
+.chatBox .messages {
+  height: 94%;
+  overflow-y: scroll;
+}
+.chatBox .messages::-webkit-scrollbar {
+  display: none;
+}
+
+.chatBox .sentMessage,
+.chatBox .receivedMessage {
+  width: min(700px, 100%);
+  margin-bottom: 0.5rem;
 }
