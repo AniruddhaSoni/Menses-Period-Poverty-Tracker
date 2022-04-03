@@ -418,9 +418,8 @@
   color: #0f81a5;
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+/*--------------------- Home Page CSS ---------------------*/
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
@@ -496,4 +495,78 @@
 .chatBox .receivedMessage {
   width: min(700px, 100%);
   margin-bottom: 0.5rem;
+}
+
+/*--------------------- Infow Window CSS ---------------------*/
+
+#infowindow {
+  max-width: 30rem;
+}
+
+#infowindow .card-body {
+  border: none;
+  box-shadow: 0px 18px 12px 0px #0000005c;
+}
+
+#infowindow .card {
+  width: 30rem;
+}
+
+#infowindow .container {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+#infowindow h6 i {
+  margin-right: 10px;
+}
+
+#infowindow .btn {
+  width: 40%;
+  text-align: center;
+  padding-top: 10px;
+  color: #ffffff;
+}
+
+#infowindow .btn i {
+  margin-right: 10px;
+}
+
+#infowindow .card-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#infowindow .text {
+  font-weight: bold;
+}
+
+#infowindow .phone {
+  font-weight: bold;
+}
+
+#infowindow .address {
+  font-weight: bold;
+}
+
+#infowindow .card-text {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#infowindow .footer::before {
+  content: ".";
+  font-size: 0;
+  display: block;
+  height: 2px;
+  width: 67%;
+  background: #4950577a;
+  margin: 3px 0 10px;
+}
+
+#infowindow .mytext {
+  margin-top: 5px;
 }
