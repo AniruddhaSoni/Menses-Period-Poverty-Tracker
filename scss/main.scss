@@ -1,0 +1,42 @@
+// custom variables
+$primary: #0F81A5;
+$secondary: #CEB8DC;
+$success: #FFFFFF;
+$info: #705880;
+$warning: #171717;
+$danger: #474747;
+
+$teal:#0F81A5;
+$pink: #CEB8DC;
+$voilet: #705880;
+$white:  #FFFFFF;
+$lightgray: #171717;
+$darkgray: #474747;
+
+$colors: (
+  "teal":       $teal,
+  "pink":     $pink,
+  "voilet":     $voilet,
+  "white":       $white,
+  "lightgray":        $lightgray,
+  "darkgray":     $darkgray,
+);
+
+$theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark,
+  "teal":       $teal,
+  "pink":     $pink,
+  "voilet":     $voilet,
+  "white":       $white,
+  "lightgray":        $lightgray,
+  "darkgray":     $darkgray,
+) ;
+@import "../node_modules/bootstrap/scss/bootstrap";
+

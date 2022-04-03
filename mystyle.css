@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*--------------------- Index Page CSS ---------------------*/
+
+#banner {
+  background-color: #0f81a5;
+  background-position: center;
+  height: 100vh;
+}
+.banner-text {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 180px;
+}
+
+.banner-text h1 {
+  font-size: 70px;
+}
+
+.banner-text p {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.banner-btn {
+  margin: 70px auto 0;
+}
+
+.banner-btn a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #ffffff;
+  border: 0.5px solid #ffffff;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+}
+
+.banner-btn a span {
+  width: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+  width: 100%;
+}
+
+.banner-btn a:hover {
+  color: #000;
+}
+
+/*--------------------- login Page CSS ---------------------*/
+
+.login {
+  align-items: center;
+}
+
+.login .login-img {
+  height: 400px;
+}
+
+.create {
+  align-items: center;
+}
+
+.create .create-heading p {
+  font-size: 44px;
+  font-weight: 600;
+  color: #0f81a5;
+}
+
+/*--------------------- Navbar CSS ---------------------*/
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 86px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#header.fixed-top {
+  height: 70px;
+}
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-size: 50px;
+}
+#header .logo a {
+  color: #0f81a5;
+  text-decoration: none;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+
+.navbar li a i {
+  margin-right: 10px;
+}
+
+.navbar > ul > li {
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+}
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222222;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #0f81a5;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #0f81a5;
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #222222;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(9, 9, 9, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #222222;
+}
+.navbar-mobile > ul > li {
+  padding: 0;
+}
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover > a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
+}
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #0f81a5;
+}
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+/*--------------------- Profile Page CSS ---------------------*/
+
+.profile {
+  margin: 20px auto;
+  position: relative;
+  max-width: 800px;
+}
+
+.user-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+
+.user-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.user-form .input-text:focus + .label,
+.user-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+
+.user-form .input-text:focus {
+  outline: none;
+}
+
+.user-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+}
+
+/*--------------------- Help Page CSS ---------------------*/
+
+#help-page .create-heading p {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0f81a5;
+}
+
+#help h1 {
+  text-align: center;
+  margin: 30px 0 !important;
+  text-transform: capitalize;
+}
+
+#help .card,
+.card-header {
+  background-color: #0f81a5 !important;
+  border: none;
+  padding: 0 !important;
+  margin-bottom: 30px;
+}
+
+#help .card {
+  box-shadow: 0 2px 25px 0 rgba(110, 130, 208, 0.18);
+}
+
+#help .btn-link {
+  width: 100%;
+  height: 62px;
+  color: #ffffff !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  text-decoration: none !important;
+}
+
+#help .btn-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#help .btn-link:hover {
+  color: #ffffff;
+}
+
+#help .card-body {
+  background: #ffffff;
+}
+
+#help .btn-link::after {
+  content: "\2212";
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50px;
+  right: 15px;
+  top: 18px;
+  color: #0f81a5;
+  position: absolute;
+  background: #ffffff;
+}
+
+#help .btn-link.collapsed::after {
+  content: "\002B";
+}
+
+#help .btn-link::before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background: #0f81a5;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 30px;
+  top: 70px;
+}
+
+/*--------------------- Map Page CSS ---------------------*/
+
+#map {
+  height: 100vh;
+}
+
+/*--------------------- Info window CSS ---------------------*/
+.allNgos {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(100%, 400px);
+  height: 100%;
+  background-color: white;
+}
+
+/*--------------------- Contact Page CSS ---------------------*/
+
+#contact h1 {
+  color: #0f81a5;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  border: 1px solid #e2eefd;
+  padding: 36px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  margin-top: 40px;
+}
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #f1f6fe;
+  border-radius: 4px;
+  border: 1px solid #deebfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+.services .icon-box .icon i {
+  color: #0f81a5;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.services .icon-box h4 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+  text-decoration: none;
+}
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+}
+.services .icon-box:hover h4 a,
+.services .icon-box:hover .icon i {
+  color: #0f81a5;
+}
+.services .icon-box:hover .icon {
+  border-color: #0f81a5;
+}
