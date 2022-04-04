@@ -686,3 +686,25 @@ transform: rotateY(-180deg);
 transform: rotate(0deg);
 }
 
+#couseller .card {
+  background: #222;
+  border: 1px solid #0f81a5;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+}
+
+#couseller .btn {
+  border: 5px solid;
+  border-image-slice: 1;
+ 
+  border-image-source:  var(--gradient) !important; 
+  text-decoration: none;
+  transition: all .4s ease;
+}
+
+#couseller .btn:hover, .btn:focus {
+  border: 5px solid #fff !important; 
+  box-shadow: #222 1px 0 10px;
+ 
+}
+
