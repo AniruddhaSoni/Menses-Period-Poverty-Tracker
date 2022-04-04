@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
     <title>Menses</title>
 
     <!--Bootstrap Custom CSS-->
@@ -23,7 +23,10 @@
     />
 
     <!--Bootstrap Icon-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,9 +36,7 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
-  
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
@@ -56,44 +57,42 @@
     </header>
     <!-- End Header -->
 
-    <!--Profile Page form-->
+    <section id="card">
+      <div>
+        <h2 class="top">Quick health tips!</h2>
+        <div class="block text-center">
+          <div class="quote-box block__main block__front">
+            <span class="quote">
+              <!-- <i class="fas fa-2x fa-quote-left"></i> -->
 
-    <section id="user-profile" class="profile d-flex justify-content-center">
-      <div class="container">
-        <div class="row user-form">
-          <div class="form-field col-sm-12">
-            <input type="text" class="input-text" name="name" id="name" />
-            <label for="name">Name</label>
+              <span class="text"> Quote To be Displayed Here </span>
+            </span>
+
+            <div class="title">Title to be Displayed Here</div>
+            <a class="new-quote btn btn-default" onclick="newQuote()"
+              >New Tip!</a
+            >
           </div>
-          <div class="form-field col-sm-12">
-            <input type="email" class="input-text" name="email" id="email" />
-            <label for="email">Email</label>
-          </div>
-          <div class="form-field col-sm-12">
-            <input type="text" class="input-text" name="bio" id="bio" />
-            <label for="bio">Add Bio</label>
-          </div>
-          <div class="form-field col-sm-12">
-            <input type="text" class="input-text" name="address" id="address" />
-            <label for="address">Address</label>
-          </div>
-          <div class="form-field col-sm-12">
-            <input
-              type="text"
-              class="input-text"
-              name="location"
-              id="location"
-            />
-            <label for="location">Change location</label>
-          </div>
-          <div
-            class="form-field col-sm-12 d-flex justify-content-end flex-column align-items-end"
-          >
-            <button id="update" class="btn btn-teal">Save</button>
+
+          <div class="quote-box block__main block__back">
+            <span class="quote">
+              <!--  <i class="fas fa-2x fa-quote-left"></i> -->
+
+              <span class="text"> Tip To be Displayed Here </span>
+            </span>
+
+            <div class="title">Title to be Displayed Here</div>
+
+            <a class="new-quote btn btn-default" onclick="newQuote()"
+              >New Tip!</a
+            >
           </div>
         </div>
       </div>
     </section>
+
+    <!--Crads JavaScript-->
+    <script src="card.js"></script>
 
     <!--Bootstrap JQuery and Javascript-->
 
@@ -112,9 +111,5 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./dist/js/auth.js"></script>
-
-    <script type="module" src="./dist/js/profile.js"></script>
   </body>
 </html>
