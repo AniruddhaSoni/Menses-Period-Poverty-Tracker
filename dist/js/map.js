@@ -2,7 +2,7 @@ import womenNgos from "./data.js";
 
 const latLon = womenNgos.ngoDetails;
 
-navigator.geolocation.getCurrentPosition(function (position) {
+navigator.geolocation.getCurrentPosition((position) => {
   var lat = position.coords.latitude;
   var lng = position.coords.longitude;
 
@@ -37,25 +37,26 @@ navigator.geolocation.getCurrentPosition(function (position) {
     markers.push(marker);
   }
   markers.forEach((i, index) => {
-    var contentString =
-      '<div id="content">' +
-      '<div id="siteNotice">' +
-      "</div>" +
-      '<h1 id="firstHeading" class="firstHeading">' +
-      latLon[index].name +
-      "</h1 > " +
-      '<div id="bodyContent">' +
-      "<div>" +
-      "<h3> Address </h3>" +
-      "<p>" +
-      latLon[index].address +
-      "</p>" +
-      "<h3> Phone </h3>" +
-      "<p>" +
-      latLon[index].phone +
-      "</p>" +
-      "</div>";
-    "</div>" + "</div>";
+    console.log(i);
+    var contentString = `
+      <section id="infowindow">
+        <div class="container">
+            <div class="card">
+                <div class="card-body py-5 px-4">
+                    <h2 class="text">NGO's Name</h2>
+                    <h6 class="card-title text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+                    <footer class="footer text-muted pt-2"></footer>
+                    <h6 class="phone pt-3"><i class="bi bi-telephone"></i></i>Phone</h6>
+                    <p class="card-text text-muted">9001434984</p>
+                    <h6 class="address pt-3"><i class="bi bi-geo"></i>Address</h6>
+                    <p class="card-text text-muted">Shree Hari Marg 145, थिरबम सडक, 44600, Nepal</p> 
+                    <a href="#" class="btn btn-teal"><i class="bi bi-signpost-split"></i>Directions</a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+      `;
     var infowindow = new google.maps.InfoWindow({
       content: contentString,
     });

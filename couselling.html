@@ -37,16 +37,6 @@
     />
   </head>
   <body>
-    <div class="spinnerContainer" id="loader">
-      <div class="spinner">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
@@ -67,15 +57,53 @@
     </header>
     <!-- End Header -->
 
-    <!--Map Page-->
-    <section class="position-relative">
-      <div id="map"></div>
-      <!-- <div class="allNgos"></div> -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 py-5 text-center">
+            <h1><strong>Meet Cousellor</strong></h1>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!--Custom javascript-->
+    <section id="couseller">
+      <div class="container mt-4">
+        <div class="row mx-auto col-8">
+          <div class="col-6 mr-4">
+            <div class="card" style="width: 24rem">
+              <img
+                src="assets/woman.png"
+                class="card-img-top"
+                alt="click here"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Name</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Subtitle</h6>
+                <p class="card-text">Availability : 10:00 am to 6:00 pm IST</p>
+                <a href="#" class="btn mr-2">Schedule Meet</a>
+              </div>
+            </div>
+          </div>
 
-    <!-- map script-->
+          <div class="col-6 mr-4">
+            <div class="card" style="width: 24rem">
+              <img
+                src="assets/man.png"
+                class="card-img-top"
+                alt="click here"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Name</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Subtitle</h6>
+                <p class="card-text">Availability : 10:00 am to 6:00 pm IST</p>
+                <a href="#" class="btn mr-2">Schedule Meet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--Bootstrap JQuery and Javascript-->
 
@@ -94,11 +122,5 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFsACcc2Q3tRcSITVL8P-ecG524ABOXJE&libraries=places"></script> -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFsACcc2Q3tRcSITVL8P-ecG524ABOXJE&libraries=&v=weekly"></script>
-
-    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
-    <script type="module" src="./dist/js/map.js"></script>
-    <script src="./dist/js/loader.js"></script>
   </body>
 </html>

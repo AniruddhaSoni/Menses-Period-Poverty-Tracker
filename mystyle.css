@@ -6,6 +6,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
 .btn-blue,
 .bg-blue {
   background-color: #0f81a5;
@@ -471,7 +472,6 @@
 }
 .services .icon-box:hover .icon {
   border-color: #0f81a5;
-  
 }
 
 /*--------------------- Space CSS ---------------------*/
@@ -505,19 +505,14 @@
   max-width: 30rem;
 }
 
-#infowindow .card-body {
-  border: none;
-  box-shadow: 0px 18px 12px 0px #0000005c;
-}
-
 #infowindow .card {
   width: 30rem;
+  border: none !important;
 }
 
 #infowindow .container {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
 }
 
 #infowindow h6 i {
@@ -572,6 +567,73 @@
 #infowindow .mytext {
   margin-top: 5px;
 }
+button[title="Close"] {
+  font-size: 1rem;
+}
+/* ============ */
+.spinnerContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner {
+  width: 72px;
+  height: 72px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: rgba(15, 129, 165, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #0f81a5;
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
 
 .btn {
   color: #ffffff;
@@ -584,105 +646,127 @@
 /*--------------------- Card CSS ---------------------*/
 
 #card {
-  min-height:100vh;
-	transition: 0.5s;
-	transition-timing-function: ease-in;
-  background-image: linear-gradient(to right bottom, #0F81A5, #a3ddcc);
+  min-height: 100vh;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  background-image: linear-gradient(to right bottom, #0f81a5, #a3ddcc);
 }
 
-
-#card .top{
-	text-align: center;
-	font-style: normal;
-	color: white;
-}
-	
-#card .quote-box{
-	padding:3rem;
-	transition: 0.5s;
-	transition-timing-function: ease-in;
-}
-	
-#card .text{
-	font-size:30px;
-	padding-left:10px;
-	transition: 0.5s;
-	transition-timing-function: ease-in;
-	background-image: linear-gradient(to right bottom, #0F81A5, #a3ddcc);
-	color: transparent;
-	-webkit-background-clip: text;
+#card .top {
+  text-align: center;
+  font-style: normal;
+  color: white;
 }
 
-#card .quote{
-	transition: 0.5s;
-	transition-timing-function: ease-in;
+#card .quote-box {
+  padding: 3rem;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
 }
 
-#card .new-quote{
-	font-size:15px;
-	border-radius: 5px;
-	cursor:pointer;
-	padding-bottom: 8px;
-	padding-top: 9px;
-	margin-top: 5px;
-	background-image: linear-gradient(to right bottom,#0F81A5, #a3ddcc);
+#card .text {
+  font-size: 30px;
+  padding-left: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  background-image: linear-gradient(to right bottom, #0f81a5, #a3ddcc);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
-#card .text-center{
-	text-align: center;
-}
-	
-#card .new-quote:hover{
-	opacity: 0.6;
+#card .quote {
+  transition: 0.5s;
+  transition-timing-function: ease-in;
 }
 
-#card .title{
-	margin:10px;
-	font-size:20px;
-	transition: 0.5s;
-	transition-timing-function: ease-in;
-	font-family: 'Open Sans Condensed', sans-serif;
-	background-image: linear-gradient(to right bottom, #28313B,#485461
-	);
-	color: transparent;
-	-webkit-background-clip: text;
+#card .new-quote {
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-bottom: 8px;
+  padding-top: 9px;
+  margin-top: 5px;
+  background-image: linear-gradient(to right bottom, #0f81a5, #a3ddcc);
 }
-	
-	
-#card p{
-	margin-top: 5px;
-	text-align: center;
-	position: absolute;
-	width: 100%;
-	top:21.5%;
+
+#card .text-center {
+  text-align: center;
+}
+
+#card .new-quote:hover {
+  opacity: 0.6;
+}
+
+#card .title {
+  margin: 10px;
+  font-size: 20px;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-image: linear-gradient(to right bottom, #28313b, #485461);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+#card p {
+  margin-top: 5px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 21.5%;
 }
 
 #card .block {
-perspective: 150rem;
-position: absolute;
-top:25%;
-left: 27%;
+  perspective: 150rem;
+  position: absolute;
+  top: 25%;
+  left: 27%;
 }
 
 #card .block__main {
-	min-width: 45vw;
-	position: absolute;
-	transition: all .8s ease;
-	backface-visibility: hidden;
-	box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
-	border-radius: .5rem;
-	background-image: linear-gradient(to right bottom, #eaf6f5,#d1f1ec);
+  min-width: 45vw;
+  position: absolute;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right bottom, #eaf6f5, #d1f1ec);
 }
 
 #card .block__back {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-#card .rotateF{
-transform: rotateY(-180deg);
+#card .rotateF {
+  transform: rotateY(-180deg);
 }
 
-#card .rotateB{
-transform: rotate(0deg);
+#card .rotateB {
+  transform: rotate(0deg);
 }
 
+/* Counselling  */
+/* style header class */
+/*--------------------- Counseller Page CSS ---------------------*/
+
+#couseller .card {
+  background: #222;
+  border: 1px solid #0f81a5;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+}
+
+#couseller .btn {
+  border: 5px solid;
+  border-image-slice: 1;
+
+  border-image-source: var(--gradient) !important;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+#couseller .btn:hover,
+.btn:focus {
+  border: 5px solid #fff !important;
+  box-shadow: #222 1px 0 10px;
+}
