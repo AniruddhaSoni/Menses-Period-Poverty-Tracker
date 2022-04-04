@@ -686,6 +686,8 @@ transform: rotateY(-180deg);
 transform: rotate(0deg);
 }
 
+/*--------------------- Counseller Page CSS ---------------------*/
+
 #couseller .card {
   background: #222;
   border: 1px solid #0f81a5;
