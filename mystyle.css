@@ -6,6 +6,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.btn-blue,
+.bg-blue {
+  background-color: #0f81a5;
+  color: #fff;
+}
+.bg-lightblue {
+  background-color: #dff0f2;
+}
+
 /*--------------------- Index Page CSS ---------------------*/
 
 #banner {
@@ -463,6 +472,30 @@
 .services .icon-box:hover .icon {
   border-color: #0f81a5;
 }
+/* -----------space----------------- */
+
+.chatBox {
+  position: relative;
+  height: 80vh;
+}
+.chatBox .inputField {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+}
+.chatBox .messages {
+  height: 94%;
+  overflow-y: scroll;
+}
+.chatBox .messages::-webkit-scrollbar {
+  display: none;
+}
+
+.chatBox .sentMessage,
+.chatBox .receivedMessage {
+  width: min(700px, 100%);
+  margin-bottom: 0.5rem;
+}
 
 /*--------------------- Infow Window CSS ---------------------*/
 
@@ -472,22 +505,22 @@
 
 #infowindow .card-body {
   border: none;
-  box-shadow: 0px 18px 12px 0px #0000005c
+  box-shadow: 0px 18px 12px 0px #0000005c;
 }
 
 #infowindow .card {
-  width: 30rem
+  width: 30rem;
 }
 
 #infowindow .container {
   display: flex;
   justify-content: center;
-  padding-top: 40px
+  padding-top: 40px;
 }
 
 #infowindow h6 i {
   margin-right: 10px;
-} 
+}
 
 #infowindow .btn {
   width: 40%;
@@ -502,39 +535,38 @@
 
 #infowindow .card-title {
   font-weight: bold;
-  font-size: 14px
+  font-size: 14px;
 }
 
 #infowindow .text {
-  font-weight: bold
+  font-weight: bold;
 }
 
 #infowindow .phone {
-  font-weight: bold
+  font-weight: bold;
 }
 
 #infowindow .address {
-  font-weight: bold
+  font-weight: bold;
 }
 
 #infowindow .card-text {
   font-size: 12px;
   font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 #infowindow .footer::before {
-  content: '.';
+  content: ".";
   font-size: 0;
   display: block;
   height: 2px;
   width: 67%;
   background: #4950577a;
-  margin: 3px 0 10px
+  margin: 3px 0 10px;
 }
 
 #infowindow .mytext {
-  margin-top: 5px
+  margin-top: 5px;
 }
-

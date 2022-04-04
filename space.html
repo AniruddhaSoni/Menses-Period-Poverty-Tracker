@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <title>Space</title>
+
+    <!--Bootstrap Custom CSS-->
+    <link rel="stylesheet" href="./dist/css/main.css" crossorigin="anonymous" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+
+    <!--icon-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <!--Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo"><a href="index.html">Menses</a></h1>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="main.html"
+                ><i class="bi bi-house-door"></i> Home</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <main class="text-center pt-4">
+      <h2>Welcome To Space</h2>
+
+      <div class="chatBox container mt-4">
+        <div class="messages w-100 d-flex flex-column" id="messages"></div>
+        <div class="inputField w-100 d-flex justify-content-between">
+          <textarea
+            class="form-control me-2"
+            type="text"
+            name="message"
+            id="message"
+            placeholder="write your message here"
+            rows="1"
+          ></textarea>
+          <input
+            class="btn px-5 btn-blue"
+            type="button"
+            value="send"
+            id="submit"
+          />
+        </div>
+      </div>
+      <script type="module" src="./dist/js/space.js"></script>
+    </main>
+  </body>
+</html>
