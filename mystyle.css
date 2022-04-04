@@ -322,80 +322,59 @@
 
 /*--------------------- Help Page CSS ---------------------*/
 
-#help-page .create-heading p {
-  font-size: 44px;
-  font-weight: 700;
+.faq {
+  padding: 60px 0;
+}
+.faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+.faq .faq-list li {
+  border-bottom: 1px solid #a4ddee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.faq .faq-list .question {
+  display: block;
+  position: relative;
+  font-family: #0f81a5;
+  font-size: 18px;
+  line-height: 70px;
+  font-weight: 500;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #0f81a5;
+  transition: 0.3s;
+}
+.faq .faq-list i {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 25px;
+}
+.faq .faq-list .icon-show {
+  display: none;
+}
+.faq .faq-list .collapsed {
+  color: black;
+}
+.faq .faq-list .collapsed:hover {
   color: #0f81a5;
 }
-
-#help h1 {
-  text-align: center;
-  margin: 30px 0 !important;
-  text-transform: capitalize;
+.faq .faq-list .collapsed .icon-show {
+  display: inline-block;
+  transition: 0.6s;
+}
+.faq .faq-list .collapsed .icon-close {
+  display: none;
+  transition: 0.6s;
 }
 
-#help .card,
-.card-header {
-  background-color: #0f81a5 !important;
-  border: none;
-  padding: 0 !important;
-  margin-bottom: 30px;
-}
 
-#help .card {
-  box-shadow: 0 2px 25px 0 rgba(110, 130, 208, 0.18);
-}
-
-#help .btn-link {
-  width: 100%;
-  height: 62px;
-  color: #ffffff !important;
-  font-weight: bold !important;
-  text-align: left !important;
-  text-decoration: none !important;
-}
-
-#help .btn-link:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-#help .btn-link:hover {
-  color: #ffffff;
-}
-
-#help .card-body {
-  background: #ffffff;
-}
-
-#help .btn-link::after {
-  content: "\2212";
-  width: 35px;
-  font-size: 25px;
-  text-align: center;
-  border-radius: 50px;
-  right: 15px;
-  top: 18px;
-  color: #0f81a5;
-  position: absolute;
-  background: #ffffff;
-}
-
-#help .btn-link.collapsed::after {
-  content: "\002B";
-}
-
-#help .btn-link::before {
-  content: "";
-  height: 25px;
-  width: 25px;
-  position: absolute;
-  background: #0f81a5;
-  z-index: 1;
-  transform: rotate(45deg);
-  left: 30px;
-  top: 70px;
-}
 
 /*--------------------- Map Page CSS ---------------------*/
 
