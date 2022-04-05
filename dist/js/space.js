@@ -28,7 +28,7 @@ const database = getDatabase(app);
 
 var myName = sessionStorage.getItem("userName") || prompt("Enter your name");
 
-sessionStorage.setItem("userName", myName);
+localStorage.setItem("userName", myName);
 
 submit.addEventListener("click", (e) => {
   var message = document.getElementById("message").value;
