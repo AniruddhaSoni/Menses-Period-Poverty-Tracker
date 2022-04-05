@@ -6,7 +6,6 @@ import {
   ref,
   push,
   child,
-  onValue,
   onChildAdded,
 } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
 
@@ -14,15 +13,7 @@ import {
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAH0cGACFs08M3rrD3_swwDpltG2KzzzCY",
-  authDomain: "gsolution-754c5.firebaseapp.com",
-  projectId: "gsolution-754c5",
-  storageBucket: "gsolution-754c5.appspot.com",
-  messagingSenderId: "307270571076",
-  appId: "1:307270571076:web:4f1c5083864fab91621811",
-  measurementId: "G-PG6XWR2DPQ",
-};
+import firebaseConfig from "./firebase.js";
 
 function scrollToBottom() {
   var totalHeight = document.getElementById("messages");
@@ -78,4 +69,5 @@ onChildAdded(newMsg, (data) => {
     var d1 = document.getElementById("messages");
     d1.innerHTML += divData;
   }
+  scrollToBottom();
 });
