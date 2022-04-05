@@ -39,20 +39,9 @@ function hourfinder(currhr, counsellerhr) {
 
 // get data from firestore collection
 function getCounsellorData1() {
-    
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "mensesperiodpovertytracker@gmail.com",
-        Password : "@12345abcde",
-        To : 'shubhanshu.20it569@rtu.ac.in',
-        From : "mensesperiodpovertytracker@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
 
-
+    // making https post request to server
+ 
 
     getDoc(docRef)
         .then((doci) => {
@@ -72,8 +61,8 @@ function getCounsellorData1() {
             // else set meet for next day 10 
             console.log(curr.getDate());
             console.log("hello" + counseller.date);
-   
-            if (curr.getMonth() >counseller.month || curr.getDate() > counseller.date || curr.getFullYear() > counseller.year) {
+
+            if (curr.getMonth() > counseller.month || curr.getDate() > counseller.date || curr.getFullYear() > counseller.year) {
                 alert("i am prev")
                 if (curr.getHours() <= 17 && curr.getHours() >= 10) {
                     alert("meeting is schedule at your current time")
@@ -112,11 +101,11 @@ function getCounsellorData1() {
             }
             //  set meet time to coune.hour+1 and meet is at coun.hour if curr.hour+1 is less than 6 else set date+=1 and time=8
 
-            
-            
-            
-            
-            
+
+
+
+
+
             else if (curr.getDate() == counseller.date) {
                 alert("ia am here")
                 // if change of date is required then set meet for tommorow and set meet time to 10
