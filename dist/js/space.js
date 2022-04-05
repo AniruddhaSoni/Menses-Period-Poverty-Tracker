@@ -46,10 +46,10 @@ submit.addEventListener("click", (e) => {
 
 const newMsg = ref(database, "messages/");
 
-onChildAdded(newMsg, (data) => {
+onChildAdded(newMsg, async (data) => {
   if (data.val().name != myName) {
     var divData = `<div
-    class="receivedMessage text-start align-self-start bg-blue p-4 rounded rounded-3"
+    class="receivedMessage text-start align-self-start bg-blue p-2 "
   >
     <div class="name h5">${data.val().name}</div>
     <div class="message text-start">${data.val().message}
@@ -59,7 +59,7 @@ onChildAdded(newMsg, (data) => {
     d1.innerHTML += divData;
   } else {
     var divData = `<div
-    class="sentMessage text-end align-self-end bg-lightblue p-4 rounded rounded-3"
+    class="sentMessage text-end align-self-end bg-lightblue p-2 "
   >
     <div class="name h5">${data.val().name}</div>
     <div class="message text-start">
@@ -70,4 +70,5 @@ onChildAdded(newMsg, (data) => {
     d1.innerHTML += divData;
   }
   scrollToBottom();
+  document.getElementById("loader").style.display = "none";
 });
