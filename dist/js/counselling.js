@@ -42,7 +42,7 @@ function getCounsellorData1() {
     Host: "smtp.gmail.com",
     Username: "mensesperiodpovertytracker@gmail.com",
     Password: "@12345abcde",
-    To: "shubhanshu.20it569@rtu.ac.in",
+    To: "anirudh.soni007@gmail.com",
     From: "mensesperiodpovertytracker@gmail.com",
     Subject: "This is the subject",
     Body: "And this is the body",
