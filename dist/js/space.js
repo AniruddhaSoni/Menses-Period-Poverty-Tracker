@@ -6,7 +6,6 @@ import {
   ref,
   push,
   child,
-  onValue,
   onChildAdded,
 } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
 
@@ -14,15 +13,7 @@ import {
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAH0cGACFs08M3rrD3_swwDpltG2KzzzCY",
-  authDomain: "gsolution-754c5.firebaseapp.com",
-  projectId: "gsolution-754c5",
-  storageBucket: "gsolution-754c5.appspot.com",
-  messagingSenderId: "307270571076",
-  appId: "1:307270571076:web:4f1c5083864fab91621811",
-  measurementId: "G-PG6XWR2DPQ",
-};
+import firebaseConfig from "./firebase.js";
 
 function scrollToBottom() {
   var totalHeight = document.getElementById("messages");
@@ -55,10 +46,10 @@ submit.addEventListener("click", (e) => {
 
 const newMsg = ref(database, "messages/");
 
-onChildAdded(newMsg, (data) => {
+onChildAdded(newMsg, async (data) => {
   if (data.val().name != myName) {
     var divData = `<div
-    class="receivedMessage text-start align-self-start bg-blue p-4 rounded rounded-3"
+    class="receivedMessage text-start align-self-start bg-blue p-2 "
   >
     <div class="name h5">${data.val().name}</div>
     <div class="message text-start">${data.val().message}
@@ -68,7 +59,7 @@ onChildAdded(newMsg, (data) => {
     d1.innerHTML += divData;
   } else {
     var divData = `<div
-    class="sentMessage text-end align-self-end bg-lightblue p-4 rounded rounded-3"
+    class="sentMessage text-end align-self-end bg-lightblue p-2 "
   >
     <div class="name h5">${data.val().name}</div>
     <div class="message text-start">
@@ -78,4 +69,6 @@ onChildAdded(newMsg, (data) => {
     var d1 = document.getElementById("messages");
     d1.innerHTML += divData;
   }
+  scrollToBottom();
+  document.getElementById("loader").style.display = "none";
 });
