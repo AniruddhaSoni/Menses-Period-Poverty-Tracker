@@ -2,11 +2,9 @@ var data;
 
 let front = true;
 
-const authors = document.querySelectorAll(".author");
+const authors = document.querySelectorAll(".title");
 
 const texts = document.querySelectorAll(".text");
-
-const body = document.getElementById("body");
 
 const button = document.querySelectorAll(".new-quote");
 
@@ -27,18 +25,14 @@ const displayQuote = () => {
 
   let quote = data[index].text;
 
-  let author = data[index].author;
-
-  if (!author) {
-    author = "Anonymous";
-  }
+  let tip = data[index].tip;
 
   if (front) {
     textFront.innerHTML = quote;
-    authorFront.innerHTML = author;
+    authorFront.innerHTML = tip;
   } else {
     textBack.innerHTML = quote;
-    authorBack.innerHTML = author;
+    authorBack.innerHTML = tip;
   }
 
   front = !front;
