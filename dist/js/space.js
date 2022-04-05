@@ -26,7 +26,7 @@ const submit = document.getElementById("submit");
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-var myName = sessionStorage.getItem("userName") || prompt("Enter your name");
+var myName = localStorage.getItem("userName") || prompt("Enter your name");
 
 localStorage.setItem("userName", myName);
 
