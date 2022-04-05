@@ -104,7 +104,7 @@ function getCounsellorData1() {
             To: a,
             From: "mensesperiodpovertytracker@gmail.com",
             Subject: "Meeting link of Counselling Menses",
-            Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+            Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
           }).then((message) => alert("Check Your email for meeting link"));
           alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
         } else {
@@ -140,7 +140,7 @@ curr.setDate(curr.getDate()+1)
             To: a,
             From: "mensesperiodpovertytracker@gmail.com",
             Subject: "Meeting link of Counselling Menses",
-            Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+            Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
           }).then((message) => alert("Check Your email for meeting link"));
           alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
         }
@@ -181,7 +181,7 @@ curr.setDate(curr.getDate()+1)
             To: a,
             From: "mensesperiodpovertytracker@gmail.com",
             Subject: "Meeting link of Counselling Menses",
-            Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+            Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
           }).then((message) => alert("Check Your email for meeting link"));
           alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
         }
@@ -219,7 +219,7 @@ curr.setDate(curr.getDate()+1)
               To: a,
               From: "mensesperiodpovertytracker@gmail.com",
               Subject: "Meeting link of Counselling Menses",
-              Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
+              Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1+link1,
             }).then((message) => alert("Check Your email for meeting link"));
             alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
           } else {
@@ -251,7 +251,7 @@ curr.setDate(curr.getDate()+1)
               To: a,
               From: "mensesperiodpovertytracker@gmail.com",
               Subject: "Meeting link of Counselling Menses",
-              Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+              Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
             }).then((message) => alert("Check Your email for meeting link"));
             alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
           }
@@ -285,7 +285,7 @@ curr.setDate(curr.getDate()+1)
       //       To: a,
       //       From: "mensesperiodpovertytracker@gmail.com",
       //       Subject: "Meeting link of Counselling Menses",
-      //       Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+      //       Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
       //     }).then((message) => alert("Check Your email for meeting link"));
       //     alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
       //   }
@@ -316,7 +316,7 @@ curr.setDate(curr.getDate()+1)
       //         To: a,
       //         From: "mensesperiodpovertytracker@gmail.com",
       //         Subject: "Meeting link of Counselling Menses",
-      //         Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
+      //         Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1+link1,
       //       }).then((message) => alert("Check Your email for meeting link"));
       //       alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
       //     } else {
@@ -341,7 +341,7 @@ curr.setDate(curr.getDate()+1)
       //         To: a,
       //         From: "mensesperiodpovertytracker@gmail.com",
       //         Subject: "Meeting link of Counselling Menses",
-      //         Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+      //         Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
       //       }).then((message) => alert("Check Your email for meeting link"));
       //       alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
       //     }
@@ -376,7 +376,7 @@ curr.setDate(curr.getDate()+1)
       //     To: a,
       //     From: "mensesperiodpovertytracker@gmail.com",
       //     Subject: "Meeting link of Counselling Menses",
-      //     Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+      //     Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
       //   }).then((message) => alert("Check Your email for meeting link"));
       //   alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
         
