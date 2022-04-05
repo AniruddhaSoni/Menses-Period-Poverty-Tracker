@@ -1,72 +1,105 @@
-import womenNgos from "./data.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
-const latLon = womenNgos.ngoDetails;
+import firebaseConfig from "./firebase.js";
 
-navigator.geolocation.getCurrentPosition((position) => {
-  var lat = position.coords.latitude;
-  var lng = position.coords.longitude;
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: {
-      lat: lat,
-      lng: lng,
-    },
-    zoom: 7,
-  });
-  var mylocation = new google.maps.Marker({
+var lat;
+var lng;
+var center;
+
+const map = new google.maps.Map(document.getElementById("map"), {
+  center: {
+    lat: 40.99406898232663,
+    lng: 45.65846879585445,
+  },
+  zoom: 7,
+});
+
+navigator.geolocation.watchPosition((position) => {
+  lat = position.coords.latitude;
+  lng = position.coords.longitude;
+
+  const myLocation = new google.maps.Marker({
     position: {
-      lat: lat,
-      lng: lng,
+      lat,
+      lng,
     },
-    map: map,
-    icon: "https://img.icons8.com/color/28/location-off.png",
-    title: "Your Location",
+    map,
+    icon: "https://img.icons8.com/officexs/48/center-direction.png",
   });
 
+  center = new google.maps.LatLng(lat, lng);
+
+  map.panTo(center);
+});
+
+async function setMarkers() {
   var markers = new Array();
-  for (var i = 0; i < latLon.length; i++) {
-    var lat = latLon[i].lat;
-    var lon = latLon[i].lon;
-    var marker = new google.maps.Marker({
+  // var markers = [];
+
+  const ngoData = await getDocs(collection(db, "users")).catch(() => {
+    location.reload();
+  });
+  await ngoData.forEach((data) => {
+    data = data.data();
+
+    let lat = data.coordinates.latitude;
+    let lng = data.coordinates.longitude;
+
+    let marker = new google.maps.Marker({
       position: {
-        lat: lat,
-        lng: lon,
+        lat,
+        lng,
       },
-      map: map,
+      map,
     });
     markers.push(marker);
-  }
-  markers.forEach((i, index) => {
-    console.log(i);
-    var contentString = `
-      <section id="infowindow">
-        <div class="container">
-            <div class="card">
-                <div class="card-body py-5 px-4">
-                    <h2 class="text">NGO's Name</h2>
-                    <h6 class="card-title text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
-                    <footer class="footer text-muted pt-2"></footer>
-                    <h6 class="phone pt-3"><i class="bi bi-telephone"></i></i>Phone</h6>
-                    <p class="card-text text-muted">9001434984</p>
-                    <h6 class="address pt-3"><i class="bi bi-geo"></i>Address</h6>
-                    <p class="card-text text-muted">Shree Hari Marg 145, थिरबम सडक, 44600, Nepal</p> 
-                    <a href="#" class="btn btn-teal"><i class="bi bi-signpost-split"></i>Directions</a>
-                </div>
-            </div>
-        </div>
-     </section>
+  });
+  let i = 0;
+  await ngoData.forEach((data) => {
+    let marker = markers[i];
+    data = data.data();
 
-      `;
+    var contentString = `
+    <section id="infowindow">
+      <div class="container">
+          <div class="card">
+              <div class="card-body py-5 px-4">
+                  <h2 class="text">${data.name}</h2>
+                  <h6 class="card-title text-muted">
+                  ${`Organization`}</h6>
+                  <footer class="footer text-muted pt-2"></footer>
+                  <h6 class="phone pt-3"><i class="bi bi-telephone"></i></i>Phone</h6>
+                  <p class="card-text text-muted">${data.contact.phone}</p>
+                  <h6 class="address pt-3"><i class="bi bi-geo"></i>Address</h6>
+                  <p class="card-text text-muted">${data.contact.address}</p>
+
+              </div>
+          </div>
+      </div>
+   </section>
+
+    `;
     var infowindow = new google.maps.InfoWindow({
       content: contentString,
     });
-
-    i.addListener("click", () => {
+    console.log(ngoData.size);
+    marker.addListener("click", () => {
       infowindow.open({
-        anchor: i,
+        anchor: marker,
         map,
-        shouldFocus: false,
+        shouldFocus: true,
       });
     });
+    i++;
   });
-});
+}
+setMarkers();
