@@ -55,3 +55,4 @@ Donations can help reduce period poverty, but there are other things we can do, 
 * [Aniruddha Soni](https://github.com/AniruddhaSoni)
 * [Bharti Kumari](https://github.com/bhartik021)
 * [Diya Vijay](https://github.com/DiyaVj)
+* [Shubhanshu Sharma](https://github.com/Shubhanshu156)
