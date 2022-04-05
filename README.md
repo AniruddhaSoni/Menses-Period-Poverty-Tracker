@@ -67,7 +67,8 @@ Donations can help reduce period poverty, but there are other things we can do, 
 
 * We intend to include a event page in this application so that if an NGO organises an event to raise awareness, it can reach a larger and larger audience. 
 * Including a blog part where people may share their stories and inspire others, as well as provide health advice in their articles.
-* We want to show youngsters a process by visualising things and educate them about periods in a fun way to make them aware. So we'd like to leverage webVR technology to construct a VR environment and teach them about the menstruation cycle.
+* Verification of Organizations/donors/volunteers and needy.
+* Onboarding remote needy to the platform.
 
 ## Contributor
 
