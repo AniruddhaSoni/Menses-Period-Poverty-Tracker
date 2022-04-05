@@ -375,8 +375,6 @@
   transition: 0.6s;
 }
 
-
-
 /*--------------------- Map Page CSS ---------------------*/
 
 #map {
@@ -475,8 +473,19 @@
 
 .chatBox .sentMessage,
 .chatBox .receivedMessage {
-  width: min(700px, 100%);
+  width: min(min-content, 100%);
   margin-bottom: 0.5rem;
+}
+.chatBox .name {
+  margin: 0;
+}
+.sentMessage {
+  border-radius: 20px;
+  border-bottom-right-radius: 3px !important;
+}
+.receivedMessage {
+  border-radius: 20px;
+  border-bottom-left-radius: 3px !important;
 }
 
 /*--------------------- Infow Window CSS ---------------------*/
@@ -737,4 +746,3 @@ button[title="Close"] {
   transition: all 0.4s ease;
   color: #ffffff;
 }
-
