@@ -615,14 +615,6 @@ button[title="Close"] {
   }
 }
 
-.btn {
-  color: #ffffff;
-}
-
-.btn:hover {
-  color: #ffffff;
-}
-
 /*--------------------- Card CSS ---------------------*/
 
 #cards {
@@ -739,14 +731,10 @@ button[title="Close"] {
 #couseller .btn {
   border: 5px solid;
   border-image-slice: 1;
-
+  border: 5px solid #fff !important;
   border-image-source: var(--gradient) !important;
   text-decoration: none;
   transition: all 0.4s ease;
+  color: #ffffff;
 }
 
-#couseller .btn:hover,
-.btn:focus {
-  border: 5px solid #fff !important;
-  box-shadow: #222 1px 0 10px;
-}
