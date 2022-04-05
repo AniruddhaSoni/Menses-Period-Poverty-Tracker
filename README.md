@@ -10,7 +10,7 @@ To address this issue, we developed "Menses - Period Poverty Tracker", a web-bas
 
 ## Let's get started
 
-In this app, there are two kind of users. One is a needy person who is experiencing period poverty, and the other is a donor who is willing to assist the needy by donating tampons, sanitary kits, soaps, and other items. Both the users are able to access features of application directly using "User" button. But for donation purpose donor need to register themselves and provide required information so that user can contact them.
+In this app, there are two kind of users. One is a needy person who is experiencing period poverty, and the other is a donor who is willing to assist the needy by donating tampons, sanitary kits, soaps, and other items. Both the users are able to access features of application directly using "Needy" button. But for donation purpose donor need to register themselves and provide required information so that user can contact them.
 
 * Go to [Menses - Period Poverty Tracker](https://gdsc-rtu.github.io/Solution-Challenge-Menses/) 
 ### Donor
