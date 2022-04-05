@@ -20,14 +20,18 @@
 /*--------------------- Index Page CSS ---------------------*/
 
 #banner {
-  background-color: #0f81a5;
-  background-position: center;
+  position: relative;
+  background: url(./assets/clip-47.png), #0f81a5;
+  background-repeat: no-repeat;
+  background-position: 2rem 95%;
+  background-size: min(400px, 60%), auto;
   height: 100vh;
 }
+
 .banner-text {
   text-align: center;
   color: #ffffff;
-  padding-top: 180px;
+  padding-top: 15%;
 }
 
 .banner-text h1 {
