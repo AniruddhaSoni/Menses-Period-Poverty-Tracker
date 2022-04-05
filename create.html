@@ -37,6 +37,16 @@
     />
   </head>
   <body>
+    <div class="spinnerContainer" id="loader">
+      <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <!--Create Account Page-->
 
     <section id="login" class="create d-flex justify-content-center">
@@ -93,7 +103,7 @@
                   type="text"
                   class="form-control"
                   placeholder="Enter Pin Code / Postal Code / Zip Code"
-                  id="address"
+                  id="zip"
                   required
                 />
               </div>
@@ -129,9 +139,7 @@
               </div>
 
               <div class="text-center mb-3 col-sm-12">
-                <button id="signupBtn" class="btn btn-teal">
-                  Done
-                </button>
+                <button id="signupBtn" class="btn btn-teal">Done</button>
               </div>
             </form>
           </div>
