@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,63 +8,65 @@
   </head>
   <body>
     <script type="module">
-      // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-      // import { getAuth } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
-      // import {
-      //   getFirestore,
-      //   addDoc,
-      //   collection,
-      // } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+      import { getAuth } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+      import {
+        getFirestore,
+        addDoc,
+        collection,
+      } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
-      // import womenNgos from "./dist/js/data.js";
+      import womenNgos from "./dist/js/data.js";
 
-      // const firebaseConfig = {
-      //   apiKey: "AIzaSyAH0cGACFs08M3rrD3_swwDpltG2KzzzCY",
-      //   authDomain: "gsolution-754c5.firebaseapp.com",
-      //   projectId: "gsolution-754c5",
-      //   storageBucket: "gsolution-754c5.appspot.com",
-      //   messagingSenderId: "307270571076",
-      //   appId: "1:307270571076:web:4f1c5083864fab91621811",
-      //   measurementId: "G-PG6XWR2DPQ",
-      // };
+      const firebaseConfig = {
+        apiKey: "AIzaSyAH0cGACFs08M3rrD3_swwDpltG2KzzzCY",
+        authDomain: "gsolution-754c5.firebaseapp.com",
+        projectId: "gsolution-754c5",
+        storageBucket: "gsolution-754c5.appspot.com",
+        messagingSenderId: "307270571076",
+        appId: "1:307270571076:web:4f1c5083864fab91621811",
+        measurementId: "G-PG6XWR2DPQ",
+      };
 
-      // const app = initializeApp(firebaseConfig);
-      // const db = getFirestore(app);
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
 
-      // var ngoSchema = (name, phone, email, address, longitude, latitude) => ({
-      //   name: name,
-      //   contact: {
-      //     phone: phone,
-      //     email: "N/A" || email,
-      //     address: address,
-      //   },
-      //   coordinates: {
-      //     longitude: longitude,
-      //     latitude: latitude,
-      //   },
-      // });
+      var ngoSchema = (name, phone, email, address, longitude, latitude) => ({
+        name: name,
+        contact: {
+          phone: phone,
+          email: "N/A" || email,
+          address: address,
+        },
+        coordinates: {
+          longitude: longitude,
+          latitude: latitude,
+        },
+      });
 
-      // function updateDoc(data) {
-      //   addDoc(
-      //     collection(db, "users"),
-      //     ngoSchema(
-      //       data.name,
-      //       data.phone,
-      //       "N/A",
-      //       data.address,
-      //       data.lon,
-      //       data.lat
-      //     )
-      //   ).catch((error) => {
-      //     console.log(error);
-      //   });
-      // }
+      function updateDoc(data) {
+        addDoc(
+          collection(db, "users"),
+          ngoSchema(
+            data.name,
+            data.phone,
+            "N/A",
+            data.address,
+            data.lon,
+            data.lat
+          )
+        ).catch((error) => {
+          console.log(error);
+        });
+      }
 
-      // const ngoData = womenNgos.ngoDetails;
-      // ngoData.forEach((data) => {
-      //   updateDoc(data);
-      //   console.log(data);
-      // });
+      const ngoData = womenNgos.womensNgo.ngoDetails;
+      // console.log();
+
+      ngoData.forEach((data) => {
+        updateDoc(data);
+        console.log(data);
+      });
     </script>
   </body>
-</html>
+</html> -->
