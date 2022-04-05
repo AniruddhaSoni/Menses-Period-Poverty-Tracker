@@ -38,15 +38,11 @@ function hourfinder(currhr, counsellerhr) {
 
 // get data from firestore collection
 function getCounsellorData1() {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "mensesperiodpovertytracker@gmail.com",
-    Password: "@12345abcde",
-    To: "anirudh.soni007@gmail.com",
-    From: "mensesperiodpovertytracker@gmail.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
-  }).then((message) => alert(message));
+  var a = prompt("Enter your Email");
+  const link1 = "https://meet.google.com/nkq-bjdn-nkv";
+  var tm, date;
+
+
 
   getDoc(docRef)
     .then((doci) => {
@@ -67,12 +63,8 @@ function getCounsellorData1() {
       console.log(curr.getDate());
       console.log("hello" + counseller.date);
 
-      if (
-        curr.getMonth() > counseller.month ||
-        curr.getDate() > counseller.date ||
-        curr.getFullYear() > counseller.year
-      ) {
-        alert("i am prev");
+      if (curr.getMonth() > counseller.month || curr.getDate() > counseller.date || curr.getFullYear() > counseller.year) {
+
         if (curr.getHours() <= 17 && curr.getHours() >= 10) {
           alert("meeting is schedule at your current time");
           const cityRef = doc(db, "counseller", "A");
@@ -89,27 +81,73 @@ function getCounsellorData1() {
             },
             { merge: true }
           );
+          tm = curr.getHours();
+          if (tm>=12) {
+            tm=tm+"PM"
+            
+          }
+          else{
+            tm+="AM"
+          }
+          if (tm>=12) {
+            tm=tm+"PM"
+            
+          }
+          else{
+            tm+="AM"
+          }
+          date = curr.getDate()+":"+curr.getMonth()+":"+curr.getFullYear();
+          Email.send({
+            Host: "smtp.google.com",
+            Username: "mensesperiodpovertytracker@gmail.com",
+            Password: "@12345abcde",
+            To: a,
+            From: "mensesperiodpovertytracker@gmail.com",
+            Subject: "Meeting link of Counselling Menses",
+            Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+          }).then((message) => alert("Check Your email for meeting link"));
+          alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
         } else {
           alert("meeting is schedule at tommorow  10");
           const cityRef = doc(db, "counseller", "A");
-
+curr.setDate(curr.getDate()+1)
           setDoc(
             cityRef,
             {
               year: tommorow.getFullYear(),
               month: tommorow.getMonth(),
-              date: tommorow.getDate(),
+              date: curr.getDate(),
               hour: 11,
               minute: tommorow.getMinutes(),
               seconds: tommorow.getSeconds(),
             },
             { merge: true }
           );
+
+          tm = 10
+          if (tm>=12) {
+            tm=tm+"PM"
+            
+          }
+          else{
+            tm+="AM"
+          }
+          date = curr.getDate()+":"+curr.getMonth()+":"+curr.getFullYear();
+          Email.send({
+            Host: "smtp.google.com",
+            Username: "mensesperiodpovertytracker@gmail.com",
+            Password: "@12345abcde",
+            To: a,
+            From: "mensesperiodpovertytracker@gmail.com",
+            Subject: "Meeting link of Counselling Menses",
+            Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+          }).then((message) => alert("Check Your email for meeting link"));
+          alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
         }
       }
       //  set meet time to coune.hour+1 and meet is at coun.hour if curr.hour+1 is less than 6 else set date+=1 and time=8
-      else if (curr.getDate() == counseller.date) {
-        alert("ia am here");
+      else  {
+    
         // if change of date is required then set meet for tommorow and set meet time to 10
         if (changedate) {
           alert("meeting is schedule at 10");
@@ -127,6 +165,25 @@ function getCounsellorData1() {
             },
             { merge: true }
           );
+          tm = 10
+          if (tm>=12) {
+            tm=tm+"PM"
+            
+          }
+          else{
+            tm+="AM"
+          }
+          date = tommorow.getDate()+":"+tommorow.getMonth()+":"+tommorow.getFullYear();
+          Email.send({
+            Host: "smtp.google.com",
+            Username: "mensesperiodpovertytracker@gmail.com",
+            Password: "@12345abcde",
+            To: a,
+            From: "mensesperiodpovertytracker@gmail.com",
+            Subject: "Meeting link of Counselling Menses",
+            Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+          }).then((message) => alert("Check Your email for meeting link"));
+          alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
         }
         // if today meet is possible then set meet time to counseller time
         else {
@@ -146,6 +203,25 @@ function getCounsellorData1() {
               },
               { merge: true }
             );
+            tm = 10
+            if (tm>=12) {
+              tm=tm+"PM"
+              
+            }
+            else{
+              tm+="AM"
+            }
+            date = tommorow.getDate()+":"+tommorow.getMonth()+":"+tommorow.getFullYear();
+            Email.send({
+              Host: "smtp.google.com",
+              Username: "mensesperiodpovertytracker@gmail.com",
+              Password: "@12345abcde",
+              To: a,
+              From: "mensesperiodpovertytracker@gmail.com",
+              Subject: "Meeting link of Counselling Menses",
+              Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
+            }).then((message) => alert("Check Your email for meeting link"));
+            alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
           } else {
             setDoc(
               cityRef,
@@ -159,41 +235,158 @@ function getCounsellorData1() {
               },
               { merge: true }
             );
+            tm = counseller.hour;
+            if (tm>=12) {
+              tm=tm+"PM"
+              
+            }
+            else{
+              tm+="AM"
+            }
+            date =  counseller.date+":"+counseller.month+":"+counseller.year;
+            Email.send({
+              Host: "smtp.google.com",
+              Username: "mensesperiodpovertytracker@gmail.com",
+              Password: "@12345abcde",
+              To: a,
+              From: "mensesperiodpovertytracker@gmail.com",
+              Subject: "Meeting link of Counselling Menses",
+              Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+            }).then((message) => alert("Check Your email for meeting link"));
+            alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
           }
         }
-      } else {
-        //  case when counseller is busy and cant take meet on same date then set meet time to date
-        alert("meetin is scheduled for 11");
-        const cityRef = doc(db, "counseller", "A");
-
-        setDoc(
-          cityRef,
-          {
-            // year:2021
-            year: tommorow.getFullYear(),
-            month: tommorow.getMonth(),
-            date: tommorow.getDate(),
-            hour: 11,
-            minute: tommorow.getMinutes(),
-            seconds: tommorow.getSeconds(),
-          },
-          { merge: true }
-        );
       }
+      //  else {
+      //   //  case when counseller is busy and cant take meet on same date then set meet time to date
+
+      //   if (changedate) {
+      //     alert("meeting is schedule at 10");
+      //     const cityRef = doc(db, "counseller", "A");
+
+      //     setDoc(
+      //       cityRef,
+      //       {
+      //         year: tommorow.getFullYear(),
+      //         month: tommorow.getMonth(),
+      //         date: tommorow.getDate(),
+      //         hour: 11,
+      //         minute: tommorow.getMinutes(),
+      //         seconds: tommorow.getSeconds(),
+      //       },
+      //       { merge: true }
+      //     );
+      //     tm = 10
+      //     date = tommorow.getDate();
+      //     Email.send({
+      //       Host: "smtp.google.com",
+      //       Username: "mensesperiodpovertytracker@gmail.com",
+      //       Password: "@12345abcde",
+      //       To: a,
+      //       From: "mensesperiodpovertytracker@gmail.com",
+      //       Subject: "Meeting link of Counselling Menses",
+      //       Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+      //     }).then((message) => alert("Check Your email for meeting link"));
+      //     alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
+      //   }
+      //   // if today meet is possible then set meet time to counseller time
+      //   else {
+      //     const cityRef = doc(db, "counseller", "A");
+      //     if (counseller.hour + 1 >= 18) {
+      //       const cityRef = doc(db, "counseller", "A");
+
+      //       setDoc(
+      //         cityRef,
+      //         {
+      //           year: tommorow.getFullYear(),
+      //           month: tommorow.getMonth(),
+      //           date: tommorow.getDate(),
+      //           hour: 11,
+      //           minute: tommorow.getMinutes(),
+      //           seconds: tommorow.getSeconds(),
+      //         },
+      //         { merge: true }
+      //       );
+      //       tm = 10
+      //       date = tommorow.getDate();
+      //       Email.send({
+      //         Host: "smtp.google.com",
+      //         Username: "mensesperiodpovertytracker@gmail.com",
+      //         Password: "@12345abcde",
+      //         To: a,
+      //         From: "mensesperiodpovertytracker@gmail.com",
+      //         Subject: "Meeting link of Counselling Menses",
+      //         Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link"+link1,
+      //       }).then((message) => alert("Check Your email for meeting link"));
+      //       alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
+      //     } else {
+      //       setDoc(
+      //         cityRef,
+      //         {
+      //           year: counseller.year,
+      //           month: counseller.month,
+      //           date: counseller.date,
+      //           hour: counseller.hour + 1,
+      //           minute: counseller.minute,
+      //           seconds: counseller.hour,
+      //         },
+      //         { merge: true }
+      //       );
+      //       tm = counseller.hour;
+      //       date =  counseller.date;
+      //       Email.send({
+      //         Host: "smtp.google.com",
+      //         Username: "mensesperiodpovertytracker@gmail.com",
+      //         Password: "@12345abcde",
+      //         To: a,
+      //         From: "mensesperiodpovertytracker@gmail.com",
+      //         Subject: "Meeting link of Counselling Menses",
+      //         Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+      //       }).then((message) => alert("Check Your email for meeting link"));
+      //       alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
+      //     }
+      //   }
+
+
+
+
+      //   alert("i am in last")
+      //   const cityRef = doc(db, "counseller", "A");
+
+      //   setDoc(
+      //     cityRef,
+      //     {
+      //       // year:2021
+      //       year: tommorow.getFullYear(),
+      //       month: tommorow.getMonth(),
+      //       date: tommorow.getDate(),
+      //       hour: 11,
+      //       minute: tommorow.getMinutes(),
+      //       seconds: tommorow.getSeconds(),
+      //     },
+      //     { merge: true }
+      //   );
+
+      //   tm = 10;
+      //   date =  tommorow.getDate();
+      //   Email.send({
+      //     Host: "smtp.google.com",
+      //     Username: "mensesperiodpovertytracker@gmail.com",
+      //     Password: "@12345abcde",
+      //     To: a,
+      //     From: "mensesperiodpovertytracker@gmail.com",
+      //     Subject: "Meeting link of Counselling Menses",
+      //     Body: " Hello User Your Meeting with Our Counsellor has been confirmed Come to the meeting at" + tm + " " + date + "You can join Your meeting by clicking this link",
+      //   }).then((message) => alert("Check Your email for meeting link"));
+      //   alert("Your Meeting has been Scheduled on" + tm +"  "+ date);
+        
+      // }
     })
     .catch((error) => {
       alert(error);
     });
 }
-Email.send({
-  Host: "smtp.google.com",
-  Username: "mensesperiodpovertytracker@gmail.com",
-  Password: "@12345abcde",
-  To: "anirudh.soni007@gmail.com",
-  From: "mensesperiodpovertytracker@gmail.com",
-  Subject: "This is the subject",
-  Body: "And this is the body",
-}).then((message) => alert(message));
+
 // const cityRef = doc(db, 'counseller', "A");
 // function getCounsellorData2() {
 //     getDoc(docRef)

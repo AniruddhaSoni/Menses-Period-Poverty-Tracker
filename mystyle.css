@@ -401,6 +401,43 @@
   color: #0f81a5;
 }
 
+/*popup design
+.popup {
+  width: 350px;
+  background: #ffffff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 400;
+  margin: 30px 0 30px;
+}
+
+popup design ends here*/
+
 /*--------------------- Service Page CSS ---------------------*/
 
 .services .icon-box {
@@ -409,7 +446,7 @@
   padding: 36px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  margin-top: 40px;
+  margin-top: 86px;
 }
 .services .icon-box .icon {
   margin: 0 auto;
@@ -421,7 +458,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 86px;
   transition: ease-in-out 0.3s;
 }
 .services .icon-box .icon i {
