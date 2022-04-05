@@ -13,11 +13,11 @@ To address this issue, we developed "Menses - Period Poverty Tracker", a web-bas
 In this app, there are two kind of users. One is a needy person who is experiencing period poverty, and the other is a donor who is willing to assist the needy by donating tampons, sanitary kits, soaps, and other items. Both the users are able to access features of application directly using "User" button. But for donation purpose donor need to register themselves and provide required information so that user can contact them.
 
 * Go to [Menses - Period Poverty Tracker](https://gdsc-rtu.github.io/Solution-Challenge-Menses/) 
-# Donor
+### Donor
 * Donors need to register through "Donor" button.
 * Login/Signup
 * Enter neccesary details.
-# User
+### User
 * User can directly access features of application.
 * Use map for searching donors and their contact information.
 * Use Flip card to get quick random health tips.
@@ -33,7 +33,7 @@ Of the people who mesturate, at lease 500 million experince period poverty every
 Although period poverty is a global issue, people in low-income nations are disproportionately affected. The social stigma associated with menstruation has also played a significant part in the rise of period poverty. 
 So to reduce the period poverty, we have created this application which will provide a platform for needy to find donor and their contact information easily. In addition, the needy locate someone who can assist them. It will be easier for them to find others in their neighbourhood who can assist them. 
 
-# Features
+### Features
 
 Map - Map will help user to find donors near their location and get their contact information quickly. Click on the location icon and get required information about donor.
 
