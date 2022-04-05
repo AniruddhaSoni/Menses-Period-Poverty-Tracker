@@ -1,13 +1,10 @@
-
 var data;
+
 let front = true;
 
-
-const authors = document.querySelectorAll(".author");
+const authors = document.querySelectorAll(".title");
 
 const texts = document.querySelectorAll(".text");
-
-const body = document.getElementById("body");
 
 const button = document.querySelectorAll(".new-quote");
 
@@ -23,51 +20,37 @@ const textBack = texts[1];
 const buttonFront = button[0];
 const buttonBack = button[1];
 
+const displayQuote = () => {
+  let index = Math.floor(Math.random() * data.length);
 
-const displayQuote = () =>{
+  let quote = data[index].text;
 
-	let index = Math.floor(Math.random()*data.length);
+  let tip = data[index].tip;
 
-	let quote = data[index].text;
+  if (front) {
+    textFront.innerHTML = quote;
+    authorFront.innerHTML = tip;
+  } else {
+    textBack.innerHTML = quote;
+    authorBack.innerHTML = tip;
+  }
 
-	let author = data[index].author;
-
-	if(!author){
-		author = "Anonymous"
-	}
-
-
-	if(front){
-		
-		textFront.innerHTML = quote;
-		authorFront.innerHTML = author;
-	}else{
-		
-		textBack.innerHTML = quote;
-		authorBack.innerHTML = author;
-	}
-	
-	front = !front;
-
-}
+  front = !front;
+};
 
 fetch("card.json")
-	.then(function(response) {
-		return response.json();
-	}) 
-	.then(function(data) {
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    this.data = data;
 
-		this.data = data;
+    displayQuote();
+  });
 
-		displayQuote()
-});
+function newQuote() {
+  blockBack.classList.toggle("rotateB");
+  blockFront.classList.toggle("rotateF");
 
-
-function newQuote(){
-	
-
-	blockBack.classList.toggle('rotateB');
-	blockFront.classList.toggle('rotateF');
-
-	displayQuote();
+  displayQuote();
 }

@@ -1,30 +1,30 @@
 [
-{
-    "text":"Do yoga",
-    "author":"Bhujangasana(cobra pose), vajrasana(diamond pose) and dhanurasana(bow pose) postures of surya namaskar helps to reduce pain and cramps."
-},
-{
-    "text":"Have a proper diet, eat healthy food",
-    "author":"Avoid spicy and salty food and consume more of fruits like bananas."
-},
-{
-    "text":"Engage in physical activity",
-    "author":"Replace pain-killers with physical activities, for example stretching."
-},
-{
-    "text":"Dealing with cramps",
-    "author":"The main causes of cramps are consumption of meat and dairy products and smoking."
-},
-{
-    "text":"Periods during colder months",
-    "author":"During the colder months, periods tend to become longer and more painful. Place a hot water bottle on your abdomen to ease the flow of blood, without much pain."
-},
-{
-    "text":"Reducing mood swings",
-    "author":"Vervian tea is an anti-anxiety serum which helps control mood swings during PMS(Pre-menstrual Syndrome)."
-},
-{
-    "text":"Control cramps",
-    "author":"Eat a diet high in salmon, nuts, seeds, eggs, avocados, and olive oil."
-}
+  {
+    "text": "Do yoga",
+    "tip": "Bhujangasana(cobra pose), vajrasana(diamond pose) and dhanurasana(bow pose) postures of surya namaskar helps to reduce pain and cramps."
+  },
+  {
+    "text": "Have a proper diet, eat healthy food",
+    "tip": "Avoid spicy and salty food and consume more of fruits like bananas."
+  },
+  {
+    "text": "Engage in physical activity",
+    "tip": "Replace pain-killers with physical activities, for example stretching."
+  },
+  {
+    "text": "Dealing with cramps",
+    "tip": "The main causes of cramps are consumption of meat and dairy products and smoking."
+  },
+  {
+    "text": "Periods during colder months",
+    "tip": "During the colder months, periods tend to become longer and more painful. Place a hot water bottle on your abdomen to ease the flow of blood, without much pain."
+  },
+  {
+    "text": "Reducing mood swings",
+    "tip": "Vervian tea is an anti-anxiety serum which helps control mood swings during PMS(Pre-menstrual Syndrome)."
+  },
+  {
+    "text": "Control cramps",
+    "tip": "Eat a diet high in salmon, nuts, seeds, eggs, avocados, and olive oil."
+  }
 ]
