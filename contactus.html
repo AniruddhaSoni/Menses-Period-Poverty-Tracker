@@ -38,6 +38,16 @@
   </head>
 
   <body>
+    <div class="spinnerContainer" id="loader">
+      <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
@@ -98,9 +108,7 @@
               </div>
 
               <div class="text-left mb-4">
-                <button id="emailBtn" class="btn btn-teal">
-                  Submit
-                </button>
+                <button id="emailBtn" class="btn btn-teal">Submit</button>
               </div>
             </form>
           </div>
@@ -120,7 +128,7 @@
         emailjs.init("OBKIOPvuxOt1QHuO6");
       })();
     </script>
-    
+
     <!--Bootstrap JQuery and Javascript-->
 
     <script
@@ -138,5 +146,6 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="./dist/js/loader.js"></script>
   </body>
 </html>
